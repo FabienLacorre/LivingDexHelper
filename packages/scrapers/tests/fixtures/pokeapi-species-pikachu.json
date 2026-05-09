@@ -1,0 +1,260 @@
+{
+  "id": 25,
+  "name": "pikachu",
+  "names": [
+    {
+      "language": {
+        "name": "ja-hrkt",
+        "url": "https://pokeapi.co/api/v2/language/1/"
+      },
+      "name": "ピカチュウ"
+    },
+    {
+      "language": {
+        "name": "ja-roma",
+        "url": "https://pokeapi.co/api/v2/language/2/"
+      },
+      "name": "Pikachu"
+    },
+    {
+      "language": {
+        "name": "ko",
+        "url": "https://pokeapi.co/api/v2/language/3/"
+      },
+      "name": "피카츄"
+    },
+    {
+      "language": {
+        "name": "zh-hant",
+        "url": "https://pokeapi.co/api/v2/language/4/"
+      },
+      "name": "皮卡丘"
+    },
+    {
+      "language": {
+        "name": "fr",
+        "url": "https://pokeapi.co/api/v2/language/5/"
+      },
+      "name": "Pikachu"
+    },
+    {
+      "language": {
+        "name": "de",
+        "url": "https://pokeapi.co/api/v2/language/6/"
+      },
+      "name": "Pikachu"
+    },
+    {
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "name": "Pikachu"
+    },
+    {
+      "language": {
+        "name": "it",
+        "url": "https://pokeapi.co/api/v2/language/8/"
+      },
+      "name": "Pikachu"
+    },
+    {
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "name": "Pikachu"
+    },
+    {
+      "language": {
+        "name": "ja",
+        "url": "https://pokeapi.co/api/v2/language/11/"
+      },
+      "name": "ピカチュウ"
+    },
+    {
+      "language": {
+        "name": "zh-hans",
+        "url": "https://pokeapi.co/api/v2/language/12/"
+      },
+      "name": "皮卡丘"
+    }
+  ],
+  "varieties": [
+    {
+      "is_default": true,
+      "pokemon": {
+        "name": "pikachu",
+        "url": "https://pokeapi.co/api/v2/pokemon/25/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-rock-star",
+        "url": "https://pokeapi.co/api/v2/pokemon/10080/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-belle",
+        "url": "https://pokeapi.co/api/v2/pokemon/10081/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-pop-star",
+        "url": "https://pokeapi.co/api/v2/pokemon/10082/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-phd",
+        "url": "https://pokeapi.co/api/v2/pokemon/10083/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-libre",
+        "url": "https://pokeapi.co/api/v2/pokemon/10084/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-cosplay",
+        "url": "https://pokeapi.co/api/v2/pokemon/10085/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-original-cap",
+        "url": "https://pokeapi.co/api/v2/pokemon/10094/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-hoenn-cap",
+        "url": "https://pokeapi.co/api/v2/pokemon/10095/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-sinnoh-cap",
+        "url": "https://pokeapi.co/api/v2/pokemon/10096/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-unova-cap",
+        "url": "https://pokeapi.co/api/v2/pokemon/10097/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-kalos-cap",
+        "url": "https://pokeapi.co/api/v2/pokemon/10098/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-alola-cap",
+        "url": "https://pokeapi.co/api/v2/pokemon/10099/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-partner-cap",
+        "url": "https://pokeapi.co/api/v2/pokemon/10148/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-starter",
+        "url": "https://pokeapi.co/api/v2/pokemon/10158/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-world-cap",
+        "url": "https://pokeapi.co/api/v2/pokemon/10160/"
+      }
+    },
+    {
+      "is_default": false,
+      "pokemon": {
+        "name": "pikachu-gmax",
+        "url": "https://pokeapi.co/api/v2/pokemon/10199/"
+      }
+    }
+  ],
+  "evolution_chain": {
+    "url": "https://pokeapi.co/api/v2/evolution-chain/10/"
+  },
+  "generation": {
+    "name": "generation-i",
+    "url": "https://pokeapi.co/api/v2/generation/1/"
+  },
+  "is_baby": false,
+  "is_legendary": false,
+  "is_mythical": false,
+  "flavor_text_entries": [
+    {
+      "flavor_text": "When several of\nthese POKéMON\ngather, their\felectricity could\nbuild and cause\nlightning storms.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "red",
+        "url": "https://pokeapi.co/api/v2/version/1/"
+      }
+    },
+    {
+      "flavor_text": "When several of\nthese POKéMON\ngather, their\felectricity could\nbuild and cause\nlightning storms.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "blue",
+        "url": "https://pokeapi.co/api/v2/version/2/"
+      }
+    },
+    {
+      "flavor_text": "It keeps its tail\nraised to monitor\nits surroundings.\fIf you yank its\ntail, it will try\nto bite you.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "yellow",
+        "url": "https://pokeapi.co/api/v2/version/3/"
+      }
+    },
+    {
+      "flavor_text": "This intelligent\nPOKéMON roasts\nhard BERRIES with\felectricity to\nmake them tender\nenough to eat.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "gold",
+        "url": "https://pokeapi.co/api/v2/version/4/"
+      }
+    }
+  ]
+}
