@@ -40,6 +40,7 @@ pnpm test           # tous les tests
 pnpm typecheck
 pnpm lint
 pnpm lint:fix       # auto-fix
+pnpm format         # auto-format avec biome
 ```
 
 ## Documentation

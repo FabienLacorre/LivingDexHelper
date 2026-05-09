@@ -48,7 +48,7 @@ export type UserSettings = {
   ui: UiSettings;
 };
 
-export const DEFAULT_USER_SETTINGS: UserSettings = {
+export const DEFAULT_USER_SETTINGS = {
   language: 'fr',
   soloMode: false,
   granularity: {
@@ -65,4 +65,4 @@ export const DEFAULT_USER_SETTINGS: UserSettings = {
     theme: 'system',
     primarySpriteStyle: '2d',
   },
-};
+} as const satisfies UserSettings;
