@@ -49,4 +49,4 @@ pnpm lint:fix       # auto-fix
 
 ## Statut
 
-🚧 En construction — Plan 01 (Foundation) en cours/terminé. Voir les plans suivants pour la roadmap.
+🚧 En construction — Plan 01 (Foundation) terminé. Voir les plans suivants pour la roadmap.
