@@ -50,4 +50,4 @@ pnpm format         # auto-format avec biome
 
 ## Statut
 
-🚧 En construction — Plan 01 (Foundation) terminé. Voir les plans suivants pour la roadmap.
+🚧 En construction — Plan 01 (Foundation) ✅ terminé · Plan 02 (PokéAPI scrapers + dataset) ✅ terminé · Plan 03 (Bulbapedia + overrides) en attente.
