@@ -1,0 +1,26 @@
+{
+  "name": "livingdex-helper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "dev": "concurrently -n web,api -c blue,magenta \"pnpm --filter @livingdex/web dev\" \"pnpm --filter @livingdex/scraper-api dev\"",
+    "build": "pnpm -r --filter \"!@livingdex/scraper-api\" build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "scrape": "pnpm --filter @livingdex/scrapers cli"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "concurrently": "9.0.1",
+    "typescript": "5.6.3"
+  },
+  "packageManager": "pnpm@9.12.3"
+}
