@@ -83,7 +83,9 @@ function extractTypes(pokemon: PokeApiPokemon): PokemonType[] {
 }
 
 function extractSprites(pokemon: PokeApiPokemon): Pokemon['sprites'] {
-  const variantPath = `${pokemon.name}.png`;
+  // Use numeric ID for filenames so they match the PokeAPI sprite URL scheme
+  // (e.g. sprites/pokemon/1.png, sprites/pokemon/10195.png for forms)
+  const variantPath = `${pokemon.id}.png`;
   return {
     default: pokemon.sprites.front_default ? `default/${variantPath}` : '',
     shiny: pokemon.sprites.front_shiny ? `shiny/${variantPath}` : '',
