@@ -21,6 +21,9 @@ Thumbs.db
 *.swp
 *.swo
 
+# Claude Code session state
+.claude/
+
 # Logs
 *.log
 npm-debug.log*
