@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "version": "1970-01-01T00:00:00.000Z",
+    "schemaVersion": 1,
+    "scrapedFrom": [],
+    "generations": [],
+    "pokemonCount": 0,
+    "encountersCount": 0
+  },
+  "pokemon": [],
+  "games": [],
+  "encounters": []
+}
