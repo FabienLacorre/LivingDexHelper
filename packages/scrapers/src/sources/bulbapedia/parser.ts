@@ -42,7 +42,11 @@ export type RawAvailabilityEntry = {
   isUnobtainable: boolean;
 };
 
-const SECTION_HEADERS = [/==\s*Game locations\s*==/i, /==\s*Availability\s*==/i];
+const SECTION_HEADERS = [
+  /==\s*Game locations\s*==/i,
+  /==\s*Availability\s*==/i,
+  /=={2,3}\s*\{\{[^}]+\}\}\s+locations\s*=={2,3}/i, // templated header e.g. ==={{pkmn|Game}} locations===
+];
 
 /**
  * Extract the "Game locations" or "Availability" section from a Pokémon wikitext.

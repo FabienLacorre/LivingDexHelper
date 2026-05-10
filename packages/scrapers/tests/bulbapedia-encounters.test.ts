@@ -36,6 +36,16 @@ describe('bulbapediaGameToGameIds', () => {
   it('returns empty array for unknown game name', () => {
     expect(bulbapediaGameToGameIds('Unknown Game XYZ')).toEqual([]);
   });
+  it('maps DLC labels for SwSh', () => {
+    expect(bulbapediaGameToGameIds('The Isle of Armor')).toEqual(['sword', 'shield']);
+    expect(bulbapediaGameToGameIds('Crown Tundra')).toEqual(['sword', 'shield']);
+    expect(bulbapediaGameToGameIds('Expansion Pass')).toEqual(['sword', 'shield']);
+  });
+  it('maps DLC labels for SV', () => {
+    expect(bulbapediaGameToGameIds('The Teal Mask')).toEqual(['scarlet', 'violet']);
+    expect(bulbapediaGameToGameIds('The Indigo Disk')).toEqual(['scarlet', 'violet']);
+    expect(bulbapediaGameToGameIds('The Hidden Treasure of Area Zero')).toEqual(['scarlet', 'violet']);
+  });
 });
 
 describe('fetchBulbapediaEncounters', () => {

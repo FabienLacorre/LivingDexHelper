@@ -44,6 +44,7 @@ export class BulbapediaClient {
     url.searchParams.set('page', pageTitle);
     url.searchParams.set('prop', 'wikitext');
     url.searchParams.set('format', 'json');
+    url.searchParams.set('redirects', '1');
 
     const response = await fetch(url.toString(), {
       headers: { 'User-Agent': USER_AGENT, Accept: 'application/json' },
