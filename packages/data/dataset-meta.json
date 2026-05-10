@@ -1,8 +1,10 @@
 {
-  "version": "2026-05-09T22:27:33.709Z",
+  "version": "2026-05-10T13:39:44.961Z",
   "schemaVersion": 1,
   "scrapedFrom": [
-    "pokeapi"
+    "pokeapi",
+    "bulbapedia",
+    "manual-overrides"
   ],
   "generations": [
     1,
@@ -16,5 +18,5 @@
     9
   ],
   "pokemonCount": 1244,
-  "encountersCount": 0
+  "encountersCount": 2891
 }
