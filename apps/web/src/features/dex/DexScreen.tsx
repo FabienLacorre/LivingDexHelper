@@ -8,6 +8,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo, useState } from 'react';
 import { FiltersBar } from './FiltersBar';
 import { PokemonCard } from './PokemonCard';
+import { PokemonDetail } from './PokemonDetail';
 
 export function DexScreen() {
   const pokemon = useLiveQuery(() => db.catalog_pokemon.orderBy('nationalDexNumber').toArray(), []);
@@ -15,10 +16,10 @@ export function DexScreen() {
   const allEncounters = useLiveQuery(() => db.catalog_encounters.toArray(), []);
   const ownedGames = useOwnedGames((s) => s.ownedGames);
   const collection = useCollection((s) => s.collection);
-  const toggleOwned = useCollection((s) => s.toggleOwned);
   const soloMode = useSettings((s) => s.settings.soloMode);
   const granularity = useSettings((s) => s.settings.granularity);
   const [filters, setFilters] = useState(EMPTY_FILTERS);
+  const [selectedPokemonId, setSelectedPokemonId] = useState<string | null>(null);
 
   const encountersByPokemonId = useMemo(() => {
     const map = new Map<string, Encounter[]>();
@@ -69,10 +70,12 @@ export function DexScreen() {
             ownedGames={ownedGames}
             soloMode={soloMode}
             collection={collection.get(p.id)}
-            onClick={() => void toggleOwned(p.id)}
+            onClick={() => setSelectedPokemonId(p.id)}
           />
         ))}
       </div>
+
+      <PokemonDetail pokemonId={selectedPokemonId} onClose={() => setSelectedPokemonId(null)} />
     </div>
   );
 }
