@@ -3,6 +3,7 @@ import { EMPTY_FILTERS, matchesGeneration, matchesSearch, matchesType } from '@/
 import { useCollection } from '@/store/collection';
 import { useOwnedGames } from '@/store/ownedGames';
 import { useSettings } from '@/store/settings';
+import type { Encounter } from '@livingdex/types';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo, useState } from 'react';
 import { FiltersBar } from './FiltersBar';
@@ -18,6 +19,17 @@ export function DexScreen() {
   const soloMode = useSettings((s) => s.settings.soloMode);
   const granularity = useSettings((s) => s.settings.granularity);
   const [filters, setFilters] = useState(EMPTY_FILTERS);
+
+  const encountersByPokemonId = useMemo(() => {
+    const map = new Map<string, Encounter[]>();
+    if (!allEncounters) return map;
+    for (const e of allEncounters) {
+      const list = map.get(e.pokemonId);
+      if (list) list.push(e);
+      else map.set(e.pokemonId, [e]);
+    }
+    return map;
+  }, [allEncounters]);
 
   const filteredPokemon = useMemo(() => {
     if (!pokemon) return [];
@@ -52,13 +64,11 @@ export function DexScreen() {
           <PokemonCard
             key={p.id}
             pokemon={p}
-            inputs={{
-              encounters: allEncounters.filter((e) => e.pokemonId === p.id),
-              games,
-              ownedGames,
-              soloMode,
-              collection: collection.get(p.id),
-            }}
+            encounters={encountersByPokemonId.get(p.id) ?? []}
+            games={games}
+            ownedGames={ownedGames}
+            soloMode={soloMode}
+            collection={collection.get(p.id)}
             onClick={() => void toggleOwned(p.id)}
           />
         ))}

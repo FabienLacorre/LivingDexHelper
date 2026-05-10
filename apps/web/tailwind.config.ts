@@ -48,6 +48,7 @@ export default {
           'blocked-solo': 'hsl(var(--status-blocked-solo))',
           event: 'hsl(var(--status-event))',
           unavailable: 'hsl(var(--status-unavailable))',
+          'version-exclusive': 'hsl(var(--status-version-exclusive))',
         },
       },
       borderRadius: {

@@ -28,6 +28,7 @@
     --status-blocked-solo: 45 93% 58%;
     --status-event: 25 95% 60%;
     --status-unavailable: 0 84% 60%;
+    --status-version-exclusive: 270 70% 60%;
   }
 
   .dark {
@@ -53,6 +54,7 @@
     --status-blocked-solo: 45 85% 55%;
     --status-event: 25 85% 55%;
     --status-unavailable: 0 70% 55%;
+    --status-version-exclusive: 270 60% 65%;
   }
 }
 

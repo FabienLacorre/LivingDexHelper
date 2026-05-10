@@ -1,6 +1,6 @@
 import { cn } from '@/lib/cn';
-import { type PokemonStatus, type StatusInputs, computeStatus } from '@/lib/computeStatus';
-import type { Pokemon } from '@livingdex/types';
+import { type PokemonStatus, computeStatus } from '@/lib/computeStatus';
+import type { CollectionEntry, Encounter, Game, OwnedGame, Pokemon } from '@livingdex/types';
 import { useMemo } from 'react';
 
 const STATUS_BORDER: Record<PokemonStatus, string> = {
@@ -8,20 +8,33 @@ const STATUS_BORDER: Record<PokemonStatus, string> = {
   available: 'border-status-available',
   'blocked-solo': 'border-status-blocked-solo',
   event: 'border-status-event',
-  'version-exclusive': 'border-status-blocked-solo border-dashed',
+  'version-exclusive': 'border-status-version-exclusive border-dashed',
   unavailable: 'border-status-unavailable opacity-60',
+};
+
+type PokemonCardProps = {
+  pokemon: Pokemon;
+  encounters: Encounter[];
+  games: Game[];
+  ownedGames: OwnedGame[];
+  soloMode: boolean;
+  collection: CollectionEntry | undefined;
+  onClick: () => void;
 };
 
 export function PokemonCard({
   pokemon,
-  inputs,
+  encounters,
+  games,
+  ownedGames,
+  soloMode,
+  collection,
   onClick,
-}: {
-  pokemon: Pokemon;
-  inputs: Omit<StatusInputs, 'pokemon'>;
-  onClick: () => void;
-}) {
-  const status = useMemo(() => computeStatus({ ...inputs, pokemon }), [inputs, pokemon]);
+}: PokemonCardProps) {
+  const status = useMemo(
+    () => computeStatus({ pokemon, encounters, games, ownedGames, soloMode, collection }),
+    [pokemon, encounters, games, ownedGames, soloMode, collection],
+  );
   const spriteSrc = pokemon.sprites.default ? `/sprites/${pokemon.sprites.default}` : '';
 
   return (

@@ -68,6 +68,16 @@ export function SettingsScreen() {
                 void update({ granularity: { ...settings.granularity, includeAltForms: v } })
               }
             />
+            <Toggle
+              id="gender"
+              label="Inclure les différences de genre"
+              checked={settings.granularity.includeGenderDifferences}
+              onChange={(v) =>
+                void update({
+                  granularity: { ...settings.granularity, includeGenderDifferences: v },
+                })
+              }
+            />
           </CardContent>
         </Card>
 

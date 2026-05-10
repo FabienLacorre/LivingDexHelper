@@ -5,22 +5,24 @@ import { db } from '@/db/schema';
 import { useOwnedGames } from '@/store/ownedGames';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { Check } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 
 export function Onboarding() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const games = useLiveQuery(() => db.catalog_games.orderBy('generation').toArray(), []);
   const ownedGames = useOwnedGames((s) => s.ownedGames);
+  const hydrated = useOwnedGames((s) => s.hydrated);
   const toggleGame = useOwnedGames((s) => s.toggleGame);
   const toggleDlc = useOwnedGames((s) => s.toggleDlc);
-  const [step] = useState<'select'>('select');
+  const force = searchParams.get('force') === '1';
 
   useEffect(() => {
-    if (ownedGames.length > 0 && step === 'select') {
-      // ownedGames already populated — likely returning user; allow continue
+    if (hydrated && ownedGames.length > 0 && !force) {
+      navigate('/dex', { replace: true });
     }
-  }, [ownedGames, step]);
+  }, [hydrated, ownedGames.length, force, navigate]);
 
   if (!games) {
     return (
