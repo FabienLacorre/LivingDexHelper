@@ -1,7 +1,6 @@
 import { useMemo } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '@/db/schema';
-import { useOwnedGames } from '@/store/ownedGames';
 import { useSettings } from '@/store/settings';
 import { computeStatus } from '@/lib/computeStatus';
 import { GameCard } from './GameCard';
@@ -10,7 +9,6 @@ export function GamesScreen() {
   const games = useLiveQuery(() => db.catalog_games.orderBy('generation').toArray(), []);
   const pokemon = useLiveQuery(() => db.catalog_pokemon.toArray(), []);
   const encounters = useLiveQuery(() => db.catalog_encounters.toArray(), []);
-  const ownedGames = useOwnedGames((s) => s.ownedGames);
   const soloMode = useSettings((s) => s.settings.soloMode);
   const granularity = useSettings((s) => s.settings.granularity);
 
