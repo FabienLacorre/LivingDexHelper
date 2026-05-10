@@ -1,10 +1,12 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '@/db/schema';
 import { useCollection } from '@/store/collection';
 import { useOwnedGames } from '@/store/ownedGames';
 import { useSettings } from '@/store/settings';
 import { PokemonCard } from './PokemonCard';
+import { FiltersBar } from './FiltersBar';
+import { EMPTY_FILTERS, matchesGeneration, matchesSearch, matchesType } from '@/lib/filters';
 
 export function DexScreen() {
   const pokemon = useLiveQuery(
@@ -18,6 +20,7 @@ export function DexScreen() {
   const toggleOwned = useCollection((s) => s.toggleOwned);
   const soloMode = useSettings((s) => s.settings.soloMode);
   const granularity = useSettings((s) => s.settings.granularity);
+  const [filters, setFilters] = useState(EMPTY_FILTERS);
 
   const filteredPokemon = useMemo(() => {
     if (!pokemon) return [];
@@ -26,9 +29,13 @@ export function DexScreen() {
       if (!granularity.includeGigamax && p.formCategory === 'gigamax') return false;
       if (!granularity.includeAltForms && p.formCategory === 'alt') return false;
       if (!granularity.includeGenderDifferences && p.formCategory === 'gender') return false;
-      return p.formCategory !== 'cosmetic';
+      if (p.formCategory === 'cosmetic') return false;
+      if (!matchesSearch(p, filters.search)) return false;
+      if (!matchesGeneration(p, filters.generations)) return false;
+      if (!matchesType(p, filters.types)) return false;
+      return true;
     });
-  }, [pokemon, granularity]);
+  }, [pokemon, granularity, filters]);
 
   if (!pokemon || !games || !allEncounters) {
     return <div className="p-8 text-sm text-muted-foreground">Chargement du dex…</div>;
@@ -42,6 +49,8 @@ export function DexScreen() {
           {filteredPokemon.length} Pokémon affichés
         </p>
       </header>
+
+      <FiltersBar filters={filters} onChange={setFilters} />
 
       <div className="grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10">
         {filteredPokemon.map((p) => (
