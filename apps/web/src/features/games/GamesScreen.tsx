@@ -1,8 +1,8 @@
-import { useMemo } from 'react';
-import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '@/db/schema';
-import { useSettings } from '@/store/settings';
 import { computeStatus } from '@/lib/computeStatus';
+import { useSettings } from '@/store/settings';
+import { useLiveQuery } from 'dexie-react-hooks';
+import { useMemo } from 'react';
 import { GameCard } from './GameCard';
 
 export function GamesScreen() {
@@ -53,7 +53,8 @@ export function GamesScreen() {
       <header className="mb-6">
         <h1 className="text-2xl font-bold">Mes jeux</h1>
         <p className="text-sm text-muted-foreground">
-          Coche les jeux que tu possèdes. Le compteur montre les Pokémon attrapables si seulement ce jeu était possédé (en supposant tous les DLC).
+          Coche les jeux que tu possèdes. Le compteur montre les Pokémon attrapables si seulement ce
+          jeu était possédé (en supposant tous les DLC).
         </p>
       </header>
 

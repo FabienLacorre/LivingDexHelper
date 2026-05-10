@@ -1,13 +1,13 @@
-import { StrictMode, useEffect, useState } from 'react';
-import { createRoot } from 'react-dom/client';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from '@/components/layout/ThemeProvider';
 import { db } from '@/db/schema';
 import { seedCatalogIfNeeded } from '@/db/seed';
+import { routes } from '@/routes/routes';
 import { useCollection } from '@/store/collection';
 import { useOwnedGames } from '@/store/ownedGames';
 import { useSettings } from '@/store/settings';
-import { routes } from '@/routes/routes';
+import { StrictMode, useEffect, useState } from 'react';
+import { createRoot } from 'react-dom/client';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './index.css';
 
 const router = createBrowserRouter(routes);

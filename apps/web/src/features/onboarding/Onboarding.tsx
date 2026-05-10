@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useLiveQuery } from 'dexie-react-hooks';
-import { Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
 import { db } from '@/db/schema';
 import { useOwnedGames } from '@/store/ownedGames';
+import { useLiveQuery } from 'dexie-react-hooks';
+import { Check } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export function Onboarding() {
   const navigate = useNavigate();
@@ -23,7 +23,11 @@ export function Onboarding() {
   }, [ownedGames, step]);
 
   if (!games) {
-    return <div className="flex min-h-screen items-center justify-center text-sm text-muted-foreground">Chargement…</div>;
+    return (
+      <div className="flex min-h-screen items-center justify-center text-sm text-muted-foreground">
+        Chargement…
+      </div>
+    );
   }
 
   const isOwned = (gameId: string) => ownedGames.some((g) => g.gameId === gameId);

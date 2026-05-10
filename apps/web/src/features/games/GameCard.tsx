@@ -1,7 +1,7 @@
-import type { Game } from '@livingdex/types';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
 import { useOwnedGames } from '@/store/ownedGames';
+import type { Game } from '@livingdex/types';
 
 export function GameCard({
   game,
@@ -33,7 +33,8 @@ export function GameCard({
           </label>
         </CardTitle>
         <span className="text-xs text-muted-foreground">
-          Gen {game.generation} · {game.homeTransfer === 'unsupported' ? '⚠ pas vers HOME' : '→ HOME OK'}
+          Gen {game.generation} ·{' '}
+          {game.homeTransfer === 'unsupported' ? '⚠ pas vers HOME' : '→ HOME OK'}
         </span>
       </CardHeader>
       <CardContent>

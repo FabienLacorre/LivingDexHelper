@@ -1,11 +1,17 @@
-import { useLiveQuery } from 'dexie-react-hooks';
-import type { Theme } from '@livingdex/types';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 import { Switch } from '@/components/ui/switch';
 import { db } from '@/db/schema';
 import { useSettings } from '@/store/settings';
+import type { Theme } from '@livingdex/types';
+import { useLiveQuery } from 'dexie-react-hooks';
 
 export function SettingsScreen() {
   const settings = useSettings((s) => s.settings);
@@ -98,7 +104,8 @@ export function SettingsScreen() {
               Version du dataset : <code>{meta?.value.version ?? '—'}</code>
             </div>
             <div className="mt-1 text-sm text-muted-foreground">
-              {meta?.value.pokemonCount ?? 0} Pokémon · {meta?.value.encountersCount ?? 0} encounters · sources {(meta?.value.scrapedFrom ?? []).join(', ')}
+              {meta?.value.pokemonCount ?? 0} Pokémon · {meta?.value.encountersCount ?? 0}{' '}
+              encounters · sources {(meta?.value.scrapedFrom ?? []).join(', ')}
             </div>
           </CardContent>
         </Card>

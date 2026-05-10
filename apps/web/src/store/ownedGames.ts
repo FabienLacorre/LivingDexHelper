@@ -1,6 +1,6 @@
-import { create } from 'zustand';
-import type { GameId, OwnedGame } from '@livingdex/types';
 import { db } from '@/db/schema';
+import type { GameId, OwnedGame } from '@livingdex/types';
+import { create } from 'zustand';
 
 type OwnedGamesStore = {
   ownedGames: OwnedGame[];

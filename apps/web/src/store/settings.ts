@@ -1,7 +1,7 @@
-import { create } from 'zustand';
+import { db } from '@/db/schema';
 import type { UserSettings } from '@livingdex/types';
 import { DEFAULT_USER_SETTINGS } from '@livingdex/types';
-import { db } from '@/db/schema';
+import { create } from 'zustand';
 
 type SettingsStore = {
   settings: UserSettings;

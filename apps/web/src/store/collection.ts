@@ -1,6 +1,6 @@
-import { create } from 'zustand';
-import type { CollectionEntry } from '@livingdex/types';
 import { db } from '@/db/schema';
+import type { CollectionEntry } from '@livingdex/types';
+import { create } from 'zustand';
 
 type CollectionStore = {
   collection: Map<string, CollectionEntry>;

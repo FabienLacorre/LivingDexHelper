@@ -1,8 +1,10 @@
-import { describe, it, expect } from 'vitest';
-import { computeStatus, type StatusInputs } from './computeStatus';
-import type { Pokemon, Game } from '@livingdex/types';
+import type { Game, Pokemon } from '@livingdex/types';
+import { describe, expect, it } from 'vitest';
+import { type StatusInputs, computeStatus } from './computeStatus';
 
-const baseGame = (overrides: Partial<Game> & Pick<Game, 'id' | 'pairedVersionId' | 'supportsLinkingCord'>): Game => ({
+const baseGame = (
+  overrides: Partial<Game> & Pick<Game, 'id' | 'pairedVersionId' | 'supportsLinkingCord'>,
+): Game => ({
   names: { en: '', fr: '' },
   generation: 8,
   platform: 'switch',
@@ -46,7 +48,9 @@ describe('computeStatus', () => {
   it('returns "available" when an obtainable encounter exists in an owned game', () => {
     const input: StatusInputs = {
       pokemon: basePokemon('pikachu'),
-      encounters: [{ pokemonId: 'pikachu', gameId: 'sword', method: { type: 'wild', locations: ['Route 4'] } }],
+      encounters: [
+        { pokemonId: 'pikachu', gameId: 'sword', method: { type: 'wild', locations: ['Route 4'] } },
+      ],
       games: [sword],
       ownedGames: [{ gameId: 'sword', ownedDlcs: [] }],
       soloMode: false,
@@ -58,7 +62,9 @@ describe('computeStatus', () => {
   it('returns "unavailable" when no encounter in any owned game and no paired version', () => {
     const input: StatusInputs = {
       pokemon: basePokemon('pikachu'),
-      encounters: [{ pokemonId: 'pikachu', gameId: 'shield', method: { type: 'wild', locations: ['x'] } }],
+      encounters: [
+        { pokemonId: 'pikachu', gameId: 'shield', method: { type: 'wild', locations: ['x'] } },
+      ],
       games: [sword, shield],
       ownedGames: [],
       soloMode: false,
@@ -70,7 +76,9 @@ describe('computeStatus', () => {
   it('returns "version-exclusive" when only paired version has encounter', () => {
     const input: StatusInputs = {
       pokemon: basePokemon('pikachu'),
-      encounters: [{ pokemonId: 'pikachu', gameId: 'shield', method: { type: 'wild', locations: ['x'] } }],
+      encounters: [
+        { pokemonId: 'pikachu', gameId: 'shield', method: { type: 'wild', locations: ['x'] } },
+      ],
       games: [sword, shield],
       ownedGames: [{ gameId: 'sword', ownedDlcs: [] }],
       soloMode: false,
@@ -120,7 +128,9 @@ describe('computeStatus', () => {
   it('soloMode + only in-game-trade encounter → blocked-solo', () => {
     const input: StatusInputs = {
       pokemon: basePokemon('pikachu'),
-      encounters: [{ pokemonId: 'pikachu', gameId: 'sword', method: { type: 'in-game-trade', npc: 'Bob' } }],
+      encounters: [
+        { pokemonId: 'pikachu', gameId: 'sword', method: { type: 'in-game-trade', npc: 'Bob' } },
+      ],
       games: [sword],
       ownedGames: [{ gameId: 'sword', ownedDlcs: [] }],
       soloMode: true,
@@ -144,7 +154,9 @@ describe('computeStatus', () => {
   it('event encounter → event status (regardless of soloMode)', () => {
     const input: StatusInputs = {
       pokemon: basePokemon('mew'),
-      encounters: [{ pokemonId: 'mew', gameId: 'sword', method: { type: 'event', distributedAs: 'X' } }],
+      encounters: [
+        { pokemonId: 'mew', gameId: 'sword', method: { type: 'event', distributedAs: 'X' } },
+      ],
       games: [sword],
       ownedGames: [{ gameId: 'sword', ownedDlcs: [] }],
       soloMode: false,
@@ -167,7 +179,13 @@ describe('computeStatus', () => {
     });
     const input: StatusInputs = {
       pokemon,
-      encounters: [{ pokemonId: 'alakazam', gameId: 'sword', method: { type: 'evolution', fromId: 'kadabra' } }],
+      encounters: [
+        {
+          pokemonId: 'alakazam',
+          gameId: 'sword',
+          method: { type: 'evolution', fromId: 'kadabra' },
+        },
+      ],
       games: [sword],
       ownedGames: [{ gameId: 'sword', ownedDlcs: [] }],
       soloMode: true,
@@ -190,7 +208,13 @@ describe('computeStatus', () => {
     });
     const input: StatusInputs = {
       pokemon,
-      encounters: [{ pokemonId: 'alakazam', gameId: 'frlg-fr', method: { type: 'evolution', fromId: 'kadabra' } }],
+      encounters: [
+        {
+          pokemonId: 'alakazam',
+          gameId: 'frlg-fr',
+          method: { type: 'evolution', fromId: 'kadabra' },
+        },
+      ],
       games: [frlg],
       ownedGames: [{ gameId: 'frlg-fr', ownedDlcs: [] }],
       soloMode: true,

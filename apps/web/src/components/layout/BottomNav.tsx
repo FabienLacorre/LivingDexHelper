@@ -1,6 +1,6 @@
-import { NavLink } from 'react-router-dom';
-import { Library, Gamepad2, Settings } from 'lucide-react';
 import { cn } from '@/lib/cn';
+import { Gamepad2, Library, Settings } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 const items = [
   { to: '/dex', label: 'Dex', icon: Library },

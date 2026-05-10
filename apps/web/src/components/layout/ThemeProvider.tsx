@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
 import { useSettings } from '@/store/settings';
+import { useEffect } from 'react';
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const theme = useSettings((s) => s.settings.ui.theme);

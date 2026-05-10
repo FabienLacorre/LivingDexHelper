@@ -50,6 +50,6 @@ pnpm format         # auto-format avec biome
 
 ## Statut
 
-🚧 En construction — Plan 01 (Foundation) ✅ · Plan 02 (PokéAPI scrapers) ✅ · Plan 03 (Bulbapedia + overrides + scraper-api SSE) ✅ · Plan 04 (Web app v1) en attente.
+🚧 En construction — Plan 01 (Foundation) ✅ · Plan 02 (PokéAPI scrapers) ✅ · Plan 03 (Bulbapedia + overrides + scraper-api SSE) ✅ · Plan 04 (Web app v1) ✅ · Plan 05 (détail / stats / planning / PWA) en attente.
 
-Dataset actuel : **1244 Pokémon**, **4714 encounters** across 9 Switch games, **78.7% coverage** (979/1244 ont au moins un encounter). Les ~265 Pokémon restants sont soit des légendaires/event-only/form variants (légitimes — overrides à venir), soit des cas de slug normalization à fixer dans un follow-up.
+L'app web v1 est utilisable : sélection des jeux, grille de 1244 Pokémon avec statuts colorés, mode solo, gestion des jeux, réglages.

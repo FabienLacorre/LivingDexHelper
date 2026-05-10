@@ -1,18 +1,15 @@
-import { useMemo, useState } from 'react';
-import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '@/db/schema';
+import { EMPTY_FILTERS, matchesGeneration, matchesSearch, matchesType } from '@/lib/filters';
 import { useCollection } from '@/store/collection';
 import { useOwnedGames } from '@/store/ownedGames';
 import { useSettings } from '@/store/settings';
-import { PokemonCard } from './PokemonCard';
+import { useLiveQuery } from 'dexie-react-hooks';
+import { useMemo, useState } from 'react';
 import { FiltersBar } from './FiltersBar';
-import { EMPTY_FILTERS, matchesGeneration, matchesSearch, matchesType } from '@/lib/filters';
+import { PokemonCard } from './PokemonCard';
 
 export function DexScreen() {
-  const pokemon = useLiveQuery(
-    () => db.catalog_pokemon.orderBy('nationalDexNumber').toArray(),
-    [],
-  );
+  const pokemon = useLiveQuery(() => db.catalog_pokemon.orderBy('nationalDexNumber').toArray(), []);
   const games = useLiveQuery(() => db.catalog_games.toArray(), []);
   const allEncounters = useLiveQuery(() => db.catalog_encounters.toArray(), []);
   const ownedGames = useOwnedGames((s) => s.ownedGames);
@@ -45,9 +42,7 @@ export function DexScreen() {
     <div className="container mx-auto p-4">
       <header className="mb-4">
         <h1 className="text-2xl font-bold">Living Dex</h1>
-        <p className="text-sm text-muted-foreground">
-          {filteredPokemon.length} Pokémon affichés
-        </p>
+        <p className="text-sm text-muted-foreground">{filteredPokemon.length} Pokémon affichés</p>
       </header>
 
       <FiltersBar filters={filters} onChange={setFilters} />

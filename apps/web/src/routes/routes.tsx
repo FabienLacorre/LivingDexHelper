@@ -1,11 +1,11 @@
-import { Navigate, Outlet, type RouteObject } from 'react-router-dom';
-import { Sidebar } from '@/components/layout/Sidebar';
 import { BottomNav } from '@/components/layout/BottomNav';
-import { Onboarding } from '@/features/onboarding/Onboarding';
+import { Sidebar } from '@/components/layout/Sidebar';
 import { DexScreen } from '@/features/dex/DexScreen';
 import { GamesScreen } from '@/features/games/GamesScreen';
+import { Onboarding } from '@/features/onboarding/Onboarding';
 import { SettingsScreen } from '@/features/settings/SettingsScreen';
 import { useOwnedGames } from '@/store/ownedGames';
+import { Navigate, Outlet, type RouteObject } from 'react-router-dom';
 
 function ProtectedShell() {
   const ownedGames = useOwnedGames((s) => s.ownedGames);

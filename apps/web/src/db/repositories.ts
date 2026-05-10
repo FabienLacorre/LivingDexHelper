@@ -5,7 +5,10 @@ export async function getAllPokemon(db: LivingDexDatabase): Promise<Pokemon[]> {
   return db.catalog_pokemon.orderBy('nationalDexNumber').toArray();
 }
 
-export async function getPokemonById(db: LivingDexDatabase, id: string): Promise<Pokemon | undefined> {
+export async function getPokemonById(
+  db: LivingDexDatabase,
+  id: string,
+): Promise<Pokemon | undefined> {
   return db.catalog_pokemon.get(id);
 }
 

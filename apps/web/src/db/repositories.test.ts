@@ -1,6 +1,11 @@
-import { describe, it, expect, beforeEach, afterEach } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import {
+  getAllPokemon,
+  getEncountersForPokemon,
+  getOwnedGames,
+  setOwnedGame,
+} from './repositories';
 import { LivingDexDatabase } from './schema';
-import { getAllPokemon, getEncountersForPokemon, getOwnedGames, setOwnedGame } from './repositories';
 import 'fake-indexeddb/auto';
 
 let db: LivingDexDatabase;

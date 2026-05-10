@@ -1,7 +1,7 @@
-import { useMemo } from 'react';
-import type { Pokemon } from '@livingdex/types';
-import { computeStatus, type PokemonStatus, type StatusInputs } from '@/lib/computeStatus';
 import { cn } from '@/lib/cn';
+import { type PokemonStatus, type StatusInputs, computeStatus } from '@/lib/computeStatus';
+import type { Pokemon } from '@livingdex/types';
+import { useMemo } from 'react';
 
 const STATUS_BORDER: Record<PokemonStatus, string> = {
   owned: 'border-status-owned shadow-status-owned/30',
@@ -45,7 +45,9 @@ export function PokemonCard({
           loading="lazy"
         />
       ) : (
-        <div className="flex h-16 w-16 items-center justify-center text-xs text-muted-foreground">?</div>
+        <div className="flex h-16 w-16 items-center justify-center text-xs text-muted-foreground">
+          ?
+        </div>
       )}
       <div className="mt-1 line-clamp-1 text-xs font-medium">{pokemon.names.fr}</div>
     </button>

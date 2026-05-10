@@ -1,8 +1,8 @@
-import { Search, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { cn } from '@/lib/cn';
 import type { DexFilters } from '@/lib/filters';
+import { Search, X } from 'lucide-react';
 
 const GENERATIONS = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -20,7 +20,8 @@ export function FiltersBar({
     onChange({ ...filters, generations: next });
   };
 
-  const clearAll = () => onChange({ search: '', statuses: new Set(), generations: new Set(), types: new Set() });
+  const clearAll = () =>
+    onChange({ search: '', statuses: new Set(), generations: new Set(), types: new Set() });
 
   const hasFilters = filters.search.length > 0 || filters.generations.size > 0;
 
@@ -40,6 +41,7 @@ export function FiltersBar({
         {GENERATIONS.map((g) => (
           <button
             key={g}
+            type="button"
             onClick={() => toggleGen(g)}
             className={cn(
               'rounded-md border px-2 py-0.5 text-xs transition-colors',
@@ -52,7 +54,12 @@ export function FiltersBar({
           </button>
         ))}
         {hasFilters && (
-          <Button variant="ghost" size="sm" onClick={clearAll} className="ml-auto h-7 gap-1 text-xs">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={clearAll}
+            className="ml-auto h-7 gap-1 text-xs"
+          >
             <X className="h-3 w-3" />
             Reset
           </Button>
