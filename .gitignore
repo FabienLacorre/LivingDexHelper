@@ -37,3 +37,8 @@ pnpm-debug.log*
 # Test artifacts
 coverage/
 .nyc_output/
+
+# Vite copies of dataset/sprites — generated, source of truth is packages/data/
+apps/web/public/dataset.json
+apps/web/public/dataset-meta.json
+apps/web/public/sprites/
