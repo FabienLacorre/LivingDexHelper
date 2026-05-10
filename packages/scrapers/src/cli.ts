@@ -1,11 +1,15 @@
 #!/usr/bin/env node
+import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
+import type { Dataset } from '@livingdex/types';
 import { SCRAPER_VERSION } from './index.ts';
 import { writeDataset } from './output/writer.ts';
-import { runPokeApiPipeline } from './pipeline.ts';
+import { runCombinedPipeline, runPokeApiPipeline } from './pipeline.ts';
+import type { CoverageReport } from './output/coverage.ts';
+import { BulbapediaClient } from './sources/bulbapedia/client.ts';
 import { PokeApiClient } from './sources/pokeapi/client.ts';
 import { downloadSprites } from './sources/pokeapi/sprites.ts';
 
@@ -32,6 +36,7 @@ const { values } = parseArgs({
     'no-cache': { type: 'boolean', default: false },
     'no-sprites': { type: 'boolean', default: false },
     out: { type: 'string', multiple: false },
+    source: { type: 'string', multiple: false, default: 'all' },
     help: { type: 'boolean', short: 'h', default: false },
   },
   strict: true,
@@ -45,6 +50,7 @@ Usage:
 
 Options:
   --gen <ranges>      Generation range, e.g. "1-9", "8,9", "8" (default: 1-9)
+  --source <mode>     Data source: pokeapi | bulbapedia | all (default: all)
   --no-cache          Skip disk cache for PokéAPI requests
   --no-sprites        Skip sprite downloads (faster for testing)
   --out <dir>         Output dir (default: packages/data)
@@ -52,6 +58,7 @@ Options:
 
 Examples:
   pnpm scrape --gen 1
+  pnpm scrape --gen 1 --source pokeapi --no-sprites
   pnpm scrape --gen 8,9 --no-sprites
   pnpm scrape --no-cache
 `);
@@ -76,25 +83,58 @@ for (const gen of generations) {
 console.log(`@livingdex/scrapers v${SCRAPER_VERSION}`);
 console.log(`Generations: ${generations.join(', ')}`);
 console.log(`Species count: ${speciesIds.length}`);
+console.log(`Source: ${values.source}`);
 console.log(`Cache: ${values['no-cache'] ? 'disabled' : cacheDir}`);
 console.log(`Output: ${outDir}`);
 console.log('');
 
-const client = new PokeApiClient({ cacheDir, noCache: values['no-cache'] === true });
+const pokeApiClient = new PokeApiClient({ cacheDir, noCache: values['no-cache'] === true });
 
-const dataset = await runPokeApiPipeline({
-  client,
-  speciesIds,
-  generations,
-  onProgress: (event) => {
-    process.stdout.write(
-      `\r[${event.stage}] ${event.current}/${event.total}: ${event.message}`.padEnd(80),
-    );
-  },
-});
+let dataset: Dataset;
+let coverage: CoverageReport | undefined;
+
+if (values.source === 'pokeapi') {
+  dataset = await runPokeApiPipeline({
+    client: pokeApiClient,
+    speciesIds,
+    generations,
+    onProgress: (event) => {
+      process.stdout.write(`\r[${event.stage}] ${event.current}/${event.total}: ${event.message}`.padEnd(80));
+    },
+  });
+} else {
+  const bulbapediaClient = new BulbapediaClient({
+    cacheDir: join(REPO_ROOT, '.cache', 'bulbapedia'),
+    noCache: values['no-cache'] === true,
+  });
+  const overridesDir = join(REPO_ROOT, 'data-overrides');
+
+  const result = await runCombinedPipeline({
+    pokeApiClient,
+    bulbapediaClient,
+    speciesIds,
+    generations,
+    overridesDir,
+    onProgress: (event) => {
+      process.stdout.write(`\r[${event.stage}] ${event.current}/${event.total}: ${event.message}`.padEnd(80));
+    },
+  });
+  dataset = result.dataset;
+  coverage = result.coverage;
+}
 process.stdout.write('\n');
 
 console.log(`\nFetched ${dataset.pokemon.length} Pokémon entries (with forms).`);
+
+// Write coverage report if available
+if (coverage) {
+  writeFileSync(
+    join(outDir, 'coverage-report.json'),
+    JSON.stringify(coverage, null, 2),
+    'utf8',
+  );
+  console.log(`Coverage report: ${coverage.pokemonWithAnyEncounter}/${coverage.totalPokemon} Pokémon have encounters.`);
+}
 
 if (values['no-sprites'] !== true) {
   console.log('Downloading sprites...');
