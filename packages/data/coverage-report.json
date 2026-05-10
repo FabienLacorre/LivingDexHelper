@@ -1,7 +1,7 @@
-﻿{
-  "generatedAt": "2026-05-10T14:27:38.024Z",
+{
+  "generatedAt": "2026-05-10T21:34:06.552Z",
   "totalPokemon": 1244,
-  "pokemonWithAnyEncounter": 979,
+  "pokemonWithAnyEncounter": 980,
   "pokemonWithoutEncounter": [
     "venusaur-gmax",
     "charizard-gmax",
@@ -130,7 +130,6 @@
     "genesect",
     "greninja-battle-bond",
     "greninja-ash",
-    "floette",
     "floette-eternal",
     "furfrou",
     "meowstic-female",
@@ -292,28 +291,28 @@
     },
     {
       "gameId": "bdsp-d",
-      "encounterCount": 425,
-      "uniquePokemonIds": 425
+      "encounterCount": 444,
+      "uniquePokemonIds": 444
     },
     {
       "gameId": "bdsp-p",
-      "encounterCount": 416,
-      "uniquePokemonIds": 416
+      "encounterCount": 445,
+      "uniquePokemonIds": 445
     },
     {
       "gameId": "scarlet",
-      "encounterCount": 803,
-      "uniquePokemonIds": 638
+      "encounterCount": 804,
+      "uniquePokemonIds": 639
     },
     {
       "gameId": "violet",
-      "encounterCount": 803,
-      "uniquePokemonIds": 636
+      "encounterCount": 804,
+      "uniquePokemonIds": 637
     },
     {
       "gameId": "pla",
-      "encounterCount": 206,
-      "uniquePokemonIds": 206
+      "encounterCount": 226,
+      "uniquePokemonIds": 226
     }
   ]
 }

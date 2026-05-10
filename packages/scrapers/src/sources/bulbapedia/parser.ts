@@ -100,8 +100,14 @@ export function parseAvailabilityEntries(section: string): RawAvailabilityEntry[
     const v2 = params.get('v2');
     const area = params.get('area') ?? '';
 
-    // "area=Unobtainable" is explicit unobtainability marker
-    const isUnobtainableByArea = /unobtainable|not available/i.test(area);
+    // "area=Unobtainable" is explicit unobtainability marker.
+    // BUT: multi-form areas describe BOTH the base form (obtainable, with [[wiki links]] to
+    // locations) AND a regional/alt form (unobtainable), e.g.:
+    //   area= [[Route 225]] ('''Kantonian Form''')<br>Unobtainable ('''Alolan Form''')
+    // In that case the base form IS obtainable — only mark the whole entry unobtainable
+    // when `area` has no wiki link to a real location.
+    const hasLocationLink = /\[\[/.test(area);
+    const isUnobtainableByArea = !hasLocationLink && /unobtainable|not available/i.test(area);
     const isUnobtainable = isNoneLine || isUnobtainableByArea;
 
     // Emit one entry per game version in the template

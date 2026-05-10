@@ -1,5 +1,5 @@
 {
-  "version": "2026-05-10T14:27:20.584Z",
+  "version": "2026-05-10T21:33:53.138Z",
   "schemaVersion": 1,
   "scrapedFrom": [
     "pokeapi",
@@ -18,5 +18,5 @@
     9
   ],
   "pokemonCount": 1244,
-  "encountersCount": 4714
+  "encountersCount": 4784
 }

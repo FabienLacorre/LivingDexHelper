@@ -56,4 +56,38 @@ describe('parseAvailabilityEntries', () => {
   it('returns empty array for empty input', () => {
     expect(parseAvailabilityEntries('')).toEqual([]);
   });
+
+  it('keeps multi-form area obtainable when base form has wiki link (Rattata-style)', () => {
+    // Real Rattata BDSP entry — base form obtainable on Routes 225/226 + Grand Underground,
+    // Alolan form unobtainable. The whole entry must NOT be marked unobtainable just because
+    // the area string mentions "Unobtainable (Alolan Form)" at the end.
+    const section = [
+      '{{Availability/Entry2|v=Brilliant Diamond|v2=Shining Pearl|area=',
+      "[[Route]] {{rtn|225|Sinnoh}} <small>('''Kantonian Form''')</small>",
+      "<br>[[Grand Underground]] <small>('''Kantonian Form''')</small>",
+      "<br>Unobtainable <small>('''Alolan Form''')</small>}}",
+    ].join(' ');
+    const entries = parseAvailabilityEntries(section);
+    expect(entries).toHaveLength(2); // one per version
+    expect(entries[0]?.gameLabel).toBe('Brilliant Diamond');
+    expect(entries[0]?.isUnobtainable).toBe(false);
+    expect(entries[1]?.gameLabel).toBe('Shining Pearl');
+    expect(entries[1]?.isUnobtainable).toBe(false);
+  });
+
+  it('still flags entries unobtainable when area is purely "Unobtainable"', () => {
+    const section = '{{Availability/Entry1|v=Sword|area=Unobtainable}}';
+    const entries = parseAvailabilityEntries(section);
+    expect(entries).toHaveLength(1);
+    expect(entries[0]?.isUnobtainable).toBe(true);
+  });
+
+  it('flags unobtainable when area says "Unobtainable" with form note but no location link', () => {
+    // Edge: form-specific unobtainable without any wiki link to a location for the base form.
+    const section =
+      "{{Availability/Entry1|v=Shield|area=Unobtainable <small>('''Alolan Form''')</small>}}";
+    const entries = parseAvailabilityEntries(section);
+    expect(entries).toHaveLength(1);
+    expect(entries[0]?.isUnobtainable).toBe(true);
+  });
 });

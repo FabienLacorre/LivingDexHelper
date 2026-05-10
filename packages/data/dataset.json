@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "2026-05-10T14:27:20.584Z",
+    "version": "2026-05-10T21:33:53.138Z",
     "schemaVersion": 1,
     "scrapedFrom": [
       "pokeapi",
@@ -19,7 +19,7 @@
       9
     ],
     "pokemonCount": 1244,
-    "encountersCount": 4714
+    "encountersCount": 4784
   },
   "pokemon": [
     {
@@ -52380,6 +52380,36 @@
       "notes": "[[Route]]s {{rtn|1|Kanto}}, {{rtn|2|Kanto}}, {{rtn|4|Kanto}}, {{rtn|9|Kanto}}, {{rtn|16|Kanto}}, {{rtn|17|Kanto}}, {{rtn|18|Kanto}}, and {{rtn|22|Kanto}}, {{ka|Pokémon Mansion}}"
     },
     {
+      "pokemonId": "rattata",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Route]]s {{rtn|225|Sinnoh}} and {{rtn|226|Sinnoh}} <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]]",
+          "[[Grassland Cave]]",
+          "[[Riverbank Cave]]",
+          "[[Still-Water Cavern]]",
+          "[[Sunlit Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "[[Route]]s {{rtn|225|Sinnoh}} and {{rtn|226|Sinnoh}} <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]], [[Grassland Cave]], [[Riverbank Cave]], [[Still-Water Cavern]], [[Sunlit Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "rattata",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Route]]s {{rtn|225|Sinnoh}} and {{rtn|226|Sinnoh}} <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]]",
+          "[[Grassland Cave]]",
+          "[[Riverbank Cave]]",
+          "[[Still-Water Cavern]]",
+          "[[Sunlit Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "[[Route]]s {{rtn|225|Sinnoh}} and {{rtn|226|Sinnoh}} <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]], [[Grassland Cave]], [[Riverbank Cave]], [[Still-Water Cavern]], [[Sunlit Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
       "pokemonId": "raticate",
       "gameId": "frlg-fr",
       "method": {
@@ -52406,6 +52436,36 @@
         ]
       },
       "notes": "[[Route]]s {{rtn|16|Kanto}}, {{rtn|17|Kanto}}, and {{rtn|18|Kanto}}, {{ka|Pokémon Mansion}}"
+    },
+    {
+      "pokemonId": "raticate",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Route]]s {{rtn|225|Sinnoh}} and {{rtn|226|Sinnoh}} <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]]",
+          "[[Grassland Cave]]",
+          "[[Riverbank Cave]]",
+          "[[Still-Water Cavern]]",
+          "[[Sunlit Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "[[Route]]s {{rtn|225|Sinnoh}} and {{rtn|226|Sinnoh}} <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]], [[Grassland Cave]], [[Riverbank Cave]], [[Still-Water Cavern]], [[Sunlit Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "raticate",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Route]]s {{rtn|225|Sinnoh}} and {{rtn|226|Sinnoh}} <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]]",
+          "[[Grassland Cave]]",
+          "[[Riverbank Cave]]",
+          "[[Still-Water Cavern]]",
+          "[[Sunlit Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "[[Route]]s {{rtn|225|Sinnoh}} and {{rtn|226|Sinnoh}} <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]], [[Grassland Cave]], [[Riverbank Cave]], [[Still-Water Cavern]], [[Sunlit Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
     },
     {
       "pokemonId": "spearow",
@@ -52897,6 +52957,36 @@
     },
     {
       "pokemonId": "raichu",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Pikachu}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "raichu",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Pikachu}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "raichu",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Obsidian Fieldlands]]:''' massive [[mass outbreak]]s <small>('''Kantonian Form''')</small><br>'''[[Crimson Mirelands]]:''' [[Golden Lowlands]]&nbsp",
+          "[[File:Alpha icon.png|link=Alpha Pokémon|14px]] <small>('''Kantonian Form''')</small><br>'''[[Alabaster Icelands]]:''' [[Space-time distortion]]s <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Obsidian Fieldlands]]:''' massive [[mass outbreak]]s <small>('''Kantonian Form''')</small><br>'''[[Crimson Mirelands]]:''' [[Golden Lowlands]]&nbsp;[[File:Alpha icon.png|link=Alpha Pokémon|14px]] <small>('''Kantonian Form''')</small><br>'''[[Alabaster Icelands]]:''' [[Space-time distortion]]s <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "raichu",
       "gameId": "scarlet",
       "method": {
         "type": "wild",
@@ -52972,6 +53062,20 @@
       "notes": "[[Warm-Up Tunnel]] <small>('''Kantonian Form''')</small><br>[[Challenge Beach/Dens|Challenge Beach]], [[Courageous Cavern/Dens|Courageous Cavern]] ([[Max Raid Battle]]) <small>('''Kantonian Form''')</small><br>[[List of in-game event Pokémon in Pokémon Sword and Shield#Alolan Sandshrew|Reward]] for finding at least 30 {{rf|Alolan}} {{p|Diglett}} <small>('''Alolan Form''')</small>"
     },
     {
+      "pokemonId": "sandshrew",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Grand Underground]] - [[Spacious Cave]]",
+          "[[Rocky Cave]]",
+          "[[Sandsear Cave]]",
+          "[[Big Bluff Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "[[Grand Underground]] - [[Spacious Cave]], [[Rocky Cave]], [[Sandsear Cave]], [[Big Bluff Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
       "pokemonId": "sandslash",
       "gameId": "frlg-lg",
       "method": {
@@ -53009,6 +53113,20 @@
         ]
       },
       "notes": "[[Forest of Focus]], [[Potbottom Desert]] ([[Wanderer]]) <small>('''Kantonian Form''')</small><br>[[Challenge Beach/Dens|Challenge Beach]], [[Courageous Cavern/Dens|Courageous Cavern]], [[Potbottom Desert/Dens|Potbottom Desert]] ([[Max Raid Battle]]) <small>('''Kantonian Form''')</small><br>[[Max Lair]] ([[Dynamax Adventure]]) <small>('''Kantonian/Alolan Forms''')</small>"
+    },
+    {
+      "pokemonId": "sandslash",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Grand Underground]] - [[Spacious Cave]]",
+          "[[Rocky Cave]]",
+          "[[Sandsear Cave]]",
+          "[[Big Bluff Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "[[Grand Underground]] - [[Spacious Cave]], [[Rocky Cave]], [[Sandsear Cave]], [[Big Bluff Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
     },
     {
       "pokemonId": "nidoran-f",
@@ -53841,6 +53959,20 @@
     },
     {
       "pokemonId": "vulpix",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Grand Underground]] - [[Spacious Cave]]",
+          "[[Volcanic Cave]]",
+          "[[Sandsear Cave]]",
+          "[[Typhlo Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "[[Grand Underground]] - [[Spacious Cave]], [[Volcanic Cave]], [[Sandsear Cave]], [[Typhlo Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "vulpix",
       "gameId": "pla",
       "method": {
         "type": "event",
@@ -53882,6 +54014,15 @@
         ]
       },
       "notes": "[[Giant's Cap/Dens|Giant's Cap]] ([[Max Raid Battle]]) <small>('''Kantonian Form''')</small><br/>[[Trade]] <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "ninetales",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Vulpix}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
     },
     {
       "pokemonId": "ninetales",
@@ -55424,6 +55565,28 @@
     },
     {
       "pokemonId": "meowth",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Trophy Garden]] <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan/Galarian Forms''')</small>"
+        ]
+      },
+      "notes": "[[Trophy Garden]] <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan/Galarian Forms''')</small>"
+    },
+    {
+      "pokemonId": "meowth",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Trophy Garden]] <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan/Galarian Forms''')</small>"
+        ]
+      },
+      "notes": "[[Trophy Garden]] <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan/Galarian Forms''')</small>"
+    },
+    {
+      "pokemonId": "meowth",
       "gameId": "scarlet",
       "method": {
         "type": "gift",
@@ -55533,6 +55696,24 @@
         ]
       },
       "notes": "[[Max Lair]] ([[Dynamax Adventure]]) <small>('''Kantonian/Alolan Forms''')</small>"
+    },
+    {
+      "pokemonId": "persian",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Meowth}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "persian",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Meowth}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
     },
     {
       "pokemonId": "persian",
@@ -56199,6 +56380,19 @@
     },
     {
       "pokemonId": "growlithe",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Cobalt Coastlands]]:''' [[Windbreak Stand]]",
+          "[[Veilstone Cape]]",
+          "massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Kantonian Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Cobalt Coastlands]]:''' [[Windbreak Stand]], [[Veilstone Cape]], massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Kantonian Form''')</small>"
+    },
+    {
+      "pokemonId": "growlithe",
       "gameId": "scarlet",
       "method": {
         "type": "wild",
@@ -56280,6 +56474,17 @@
         "fromId": "unknown"
       },
       "notes": "[[Evolution|Evolve]] {{p|Growlithe}}"
+    },
+    {
+      "pokemonId": "arcanine",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Cobalt Coastlands]]:''' massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Kantonian Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Cobalt Coastlands]]:''' massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Kantonian Form''')</small>"
     },
     {
       "pokemonId": "arcanine",
@@ -57904,6 +58109,66 @@
     },
     {
       "pokemonId": "geodude",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Route]]s {{rtn|206|Sinnoh}}",
+          "{{rtn|207|Sinnoh}}",
+          "{{rtn|210|Sinnoh}}",
+          "{{rtn|211|Sinnoh}}",
+          "{{rtn|214|Sinnoh}}",
+          "and {{rtn|215|Sinnoh}}",
+          "[[Oreburgh Gate]]",
+          "[[Ruin Maniac Cave]]",
+          "[[Oreburgh Mine]]",
+          "[[Iron Island]]",
+          "[[Mt. Coronet]]",
+          "[[Maniac Tunnel]]",
+          "[[Ravaged Path]]",
+          "[[Stark Mountain]]",
+          "[[Valor Lakefront]]",
+          "[[Wayward Cave]] <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Rocky Cave]]",
+          "[[Spacious Cave]]",
+          "[[Volcanic Cave]]",
+          "[[Big Bluff Cavern]]",
+          "[[Typhlo Cavern]] <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "[[Route]]s {{rtn|206|Sinnoh}}, {{rtn|207|Sinnoh}}, {{rtn|210|Sinnoh}}, {{rtn|211|Sinnoh}}, {{rtn|214|Sinnoh}}, and {{rtn|215|Sinnoh}}, [[Oreburgh Gate]], [[Ruin Maniac Cave]], [[Oreburgh Mine]], [[Iron Island]], [[Mt. Coronet]], [[Maniac Tunnel]], [[Ravaged Path]], [[Stark Mountain]], [[Valor Lakefront]], [[Wayward Cave]] <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Rocky Cave]], [[Spacious Cave]], [[Volcanic Cave]], [[Big Bluff Cavern]], [[Typhlo Cavern]] <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "geodude",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Route]]s {{rtn|206|Sinnoh}}",
+          "{{rtn|207|Sinnoh}}",
+          "{{rtn|210|Sinnoh}}",
+          "{{rtn|211|Sinnoh}}",
+          "{{rtn|214|Sinnoh}}",
+          "and {{rtn|215|Sinnoh}}",
+          "[[Oreburgh Gate]]",
+          "[[Ruin Maniac Cave]]",
+          "[[Oreburgh Mine]]",
+          "[[Iron Island]]",
+          "[[Mt. Coronet]]",
+          "[[Maniac Tunnel]]",
+          "[[Ravaged Path]]",
+          "[[Stark Mountain]]",
+          "[[Valor Lakefront]]",
+          "[[Wayward Cave]] <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Rocky Cave]]",
+          "[[Spacious Cave]]",
+          "[[Volcanic Cave]]",
+          "[[Big Bluff Cavern]]",
+          "[[Typhlo Cavern]] <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "[[Route]]s {{rtn|206|Sinnoh}}, {{rtn|207|Sinnoh}}, {{rtn|210|Sinnoh}}, {{rtn|211|Sinnoh}}, {{rtn|214|Sinnoh}}, and {{rtn|215|Sinnoh}}, [[Oreburgh Gate]], [[Ruin Maniac Cave]], [[Oreburgh Mine]], [[Iron Island]], [[Mt. Coronet]], [[Maniac Tunnel]], [[Ravaged Path]], [[Stark Mountain]], [[Valor Lakefront]], [[Wayward Cave]] <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Rocky Cave]], [[Spacious Cave]], [[Volcanic Cave]], [[Big Bluff Cavern]], [[Typhlo Cavern]] <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "geodude",
       "gameId": "scarlet",
       "method": {
         "type": "wild",
@@ -57978,6 +58243,54 @@
     },
     {
       "pokemonId": "graveler",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Route]]s {{rtn|211|Sinnoh}}",
+          "{{rtn|214|Sinnoh}}",
+          "{{rtn|216|Sinnoh}}",
+          "and {{rtn|227|Sinnoh}}",
+          "[[Valor Lakefront]]",
+          "[[Iron Island]]",
+          "[[Mt. Coronet]]",
+          "{{si|Victory Road}}",
+          "[[Stark Mountain]]",
+          "[[Snowpoint Temple]] <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Rocky Cave]]",
+          "[[Spacious Cave]]",
+          "[[Volcanic Cave]]",
+          "[[Big Bluff Cavern]]",
+          "[[Typhlo Cavern]] (After obtaining {{TM|97|Defog}}) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "[[Route]]s {{rtn|211|Sinnoh}}, {{rtn|214|Sinnoh}}, {{rtn|216|Sinnoh}}, and {{rtn|227|Sinnoh}}, [[Valor Lakefront]], [[Iron Island]], [[Mt. Coronet]], {{si|Victory Road}}, [[Stark Mountain]], [[Snowpoint Temple]] <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Rocky Cave]], [[Spacious Cave]], [[Volcanic Cave]], [[Big Bluff Cavern]], [[Typhlo Cavern]] (After obtaining {{TM|97|Defog}}) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "graveler",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Route]]s {{rtn|211|Sinnoh}}",
+          "{{rtn|214|Sinnoh}}",
+          "{{rtn|216|Sinnoh}}",
+          "and {{rtn|227|Sinnoh}}",
+          "[[Valor Lakefront]]",
+          "[[Iron Island]]",
+          "[[Mt. Coronet]]",
+          "{{si|Victory Road}}",
+          "[[Stark Mountain]]",
+          "[[Snowpoint Temple]] <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Rocky Cave]]",
+          "[[Spacious Cave]]",
+          "[[Volcanic Cave]]",
+          "[[Big Bluff Cavern]]",
+          "[[Typhlo Cavern]] (After obtaining {{TM|97|Defog}}) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "[[Route]]s {{rtn|211|Sinnoh}}, {{rtn|214|Sinnoh}}, {{rtn|216|Sinnoh}}, and {{rtn|227|Sinnoh}}, [[Valor Lakefront]], [[Iron Island]], [[Mt. Coronet]], {{si|Victory Road}}, [[Stark Mountain]], [[Snowpoint Temple]] <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Rocky Cave]], [[Spacious Cave]], [[Volcanic Cave]], [[Big Bluff Cavern]], [[Typhlo Cavern]] (After obtaining {{TM|97|Defog}}) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "graveler",
       "gameId": "scarlet",
       "method": {
         "type": "wild",
@@ -58033,6 +58346,37 @@
         "fromId": "unknown"
       },
       "notes": "[[Evolution|Evolve]] {{p|Graveler}}"
+    },
+    {
+      "pokemonId": "golem",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Graveler}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "golem",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Graveler}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "golem",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Obsidian Fieldlands]]:''' massive [[mass outbreak]]s <small>('''Kantonian Form''')</small><br>'''[[Cobalt Coastlands]]:''' massive mass outbreaks <small>('''Kantonian Form''')</small><br>'''[[Coronet Highlands]]:''' [[Bolderoll Ravine]]&nbsp",
+          "[[File:Alpha icon.png|link=Alpha Pokémon|14px]]",
+          "massive mass outbreaks <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Obsidian Fieldlands]]:''' massive [[mass outbreak]]s <small>('''Kantonian Form''')</small><br>'''[[Cobalt Coastlands]]:''' massive mass outbreaks <small>('''Kantonian Form''')</small><br>'''[[Coronet Highlands]]:''' [[Bolderoll Ravine]]&nbsp;[[File:Alpha icon.png|link=Alpha Pokémon|14px]], massive mass outbreaks <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
     },
     {
       "pokemonId": "golem",
@@ -58093,6 +58437,49 @@
       "notes": "[[Trade]]<sup>Version 1.2.0+</sup>, [[Wild Area News]] <small>('''Kantonian Form''')</small><br>[[Glimwood Tangle]] <small>('''Galarian Form''')</small><br>[[Bridge Field/Dens|Bridge Field]] ([[Max Raid Battle]]) <small>('''Galarian Form''')</small>"
     },
     {
+      "pokemonId": "ponyta",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Route]]s {{rtn|206|Sinnoh}}",
+          "{{rtn|210|Sinnoh}}",
+          "{{rtn|211|Sinnoh}}",
+          "{{rtn|214|Sinnoh}}",
+          "and {{rt|215|Sinnoh}} <small>('''Kantonian Form''')</small><br>[[Grand Underground]]: [[Sandsear Cave]]",
+          "[[Volcanic Cave]]",
+          "[[Typhlo Cavern]] (after obtaining {{TM|96|Strength}}) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+        ]
+      },
+      "notes": "[[Route]]s {{rtn|206|Sinnoh}}, {{rtn|210|Sinnoh}}, {{rtn|211|Sinnoh}}, {{rtn|214|Sinnoh}}, and {{rt|215|Sinnoh}} <small>('''Kantonian Form''')</small><br>[[Grand Underground]]: [[Sandsear Cave]], [[Volcanic Cave]], [[Typhlo Cavern]] (after obtaining {{TM|96|Strength}}) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "ponyta",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "[[Route]]s {{rtn|206|Sinnoh}}",
+          "{{rtn|210|Sinnoh}}",
+          "{{rtn|211|Sinnoh}}",
+          "{{rtn|214|Sinnoh}}",
+          "and {{rt|215|Sinnoh}} <small>('''Kantonian Form''')</small><br>[[Grand Underground]]: [[Sandsear Cave]]",
+          "[[Volcanic Cave]]",
+          "[[Typhlo Cavern]] (after obtaining {{TM|96|Strength}}) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+        ]
+      },
+      "notes": "[[Route]]s {{rtn|206|Sinnoh}}, {{rtn|210|Sinnoh}}, {{rtn|211|Sinnoh}}, {{rtn|214|Sinnoh}}, and {{rt|215|Sinnoh}} <small>('''Kantonian Form''')</small><br>[[Grand Underground]]: [[Sandsear Cave]], [[Volcanic Cave]], [[Typhlo Cavern]] (after obtaining {{TM|96|Strength}}) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "ponyta",
+      "gameId": "pla",
+      "method": {
+        "type": "event",
+        "distributedAs": "'''[[Obsidian Fieldlands]]:''' [[Horseshoe Plains]] (additional {{Shiny}}, only [[List of in-game event Pokémon in Pokémon Legends: Arceus#Ponyta|one]] during [[Task (Legends: Arceus)|Request]] 19), massive [[mass outbreak]]s <small>('''Kantonian Form''')</small><br>'''[[Coronet Highlands]]:''' massive mass outbreaks <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+      },
+      "notes": "'''[[Obsidian Fieldlands]]:''' [[Horseshoe Plains]] (additional {{Shiny}}, only [[List of in-game event Pokémon in Pokémon Legends: Arceus#Ponyta|one]] during [[Task (Legends: Arceus)|Request]] 19), massive [[mass outbreak]]s <small>('''Kantonian Form''')</small><br>'''[[Coronet Highlands]]:''' massive mass outbreaks <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
       "pokemonId": "rapidash",
       "gameId": "frlg-fr",
       "method": {
@@ -58130,6 +58517,37 @@
         ]
       },
       "notes": "[[Trade]]<sup>Version 1.2.0+</sup>, [[Wild Area News]] <small>('''Kantonian Form''')</small><br>[[Bridge Field/Dens|Bridge Field]], [[Hammerlocke Hills/Dens|Hammerlocke Hills]], [[Lake of Outrage/Dens|Lake of Outrage]], [[Rolling Fields/Dens|Rolling Fields]] ([[Max Raid Battle]]) <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "rapidash",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Ponyta}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "rapidash",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Ponyta}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "rapidash",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Obsidian Fieldlands]]:''' [[Horseshoe Plains]]&nbsp",
+          "[[File:Alpha icon.png|link=Alpha Pokémon|14px]] (also [[mass outbreak]]s)",
+          "massive mass outbreaks <small>('''Kantonian Form''')</small><br>'''[[Coronet Highlands]]:''' massive mass outbreaks <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Obsidian Fieldlands]]:''' [[Horseshoe Plains]]&nbsp;[[File:Alpha icon.png|link=Alpha Pokémon|14px]] (also [[mass outbreak]]s), massive mass outbreaks <small>('''Kantonian Form''')</small><br>'''[[Coronet Highlands]]:''' massive mass outbreaks <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
     },
     {
       "pokemonId": "slowpoke",
@@ -58217,6 +58635,24 @@
         "distributedAs": "[[Fields of Honor]] <small>('''Galarian Form''')</small><br>[[Soothing Wetlands/Dens|Soothing Wetlands]], [[Challenge Beach/Dens|Challenge Beach]], [[Training Lowlands/Dens|Training Lowlands]], [[Snowslide Slope/Dens|Snowslide Slope]], [[Path to the Peak/Dens|Path to the Peak]], [[Giant's Bed/Dens|Giant's Bed]], [[Frigid Sea/Dens|Frigid Sea]], [[Ballimere Lake/Dens|Ballimere Lake]] ([[Max Raid Battle]]) <small>('''Galarian Form''')</small><br>[[List of in-game event Pokémon in Pokémon Sword and Shield#Kantonian Slowpoke|Reward]] for finding at least 10 {{rf|Alolan}} {{p|Diglett}} <small>('''Kantonian Form''')</small>"
       },
       "notes": "[[Fields of Honor]] <small>('''Galarian Form''')</small><br>[[Soothing Wetlands/Dens|Soothing Wetlands]], [[Challenge Beach/Dens|Challenge Beach]], [[Training Lowlands/Dens|Training Lowlands]], [[Snowslide Slope/Dens|Snowslide Slope]], [[Path to the Peak/Dens|Path to the Peak]], [[Giant's Bed/Dens|Giant's Bed]], [[Frigid Sea/Dens|Frigid Sea]], [[Ballimere Lake/Dens|Ballimere Lake]] ([[Max Raid Battle]]) <small>('''Galarian Form''')</small><br>[[List of in-game event Pokémon in Pokémon Sword and Shield#Kantonian Slowpoke|Reward]] for finding at least 10 {{rf|Alolan}} {{p|Diglett}} <small>('''Kantonian Form''')</small>"
+    },
+    {
+      "pokemonId": "slowpoke",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "{{rt|205|Sinnoh}} ([[Poké Radar]]) <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]]",
+          "[[Grassland Cave]]",
+          "[[Sunlit Cavern]]",
+          "[[Fountainspring Cave]]",
+          "[[Riverbank Cave]]",
+          "[[Still-Water Cavern]]",
+          "[[Dazzling Cave]]",
+          "[[Stargleam Cavern]] <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+        ]
+      },
+      "notes": "{{rt|205|Sinnoh}} ([[Poké Radar]]) <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]], [[Grassland Cave]], [[Sunlit Cavern]], [[Fountainspring Cave]], [[Riverbank Cave]], [[Still-Water Cavern]], [[Dazzling Cave]], [[Stargleam Cavern]] <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
     },
     {
       "pokemonId": "slowpoke",
@@ -58312,6 +58748,15 @@
         "fromId": "unknown"
       },
       "notes": "[[Evolution|Evolve]] {{p|Slowpoke}} <small>('''Galarian Form''')</small><br>[[Max Lair]] ([[Dynamax Adventure]]) <small>('''Kantonian Form''')</small>"
+    },
+    {
+      "pokemonId": "slowbro",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Slowpoke}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
     },
     {
       "pokemonId": "slowbro",
@@ -58668,6 +59113,34 @@
       "notes": "[[Trade]]<sup>Version 1.2.0+</sup> <small>('''Kantonian Form''')</small><br>{{rt|5|Galar}}, [[Giant's Mirror]] <small>('''Galarian Form''')</small><br>[[Dusty Bowl/Dens|Dusty Bowl]], [[North Lake Miloch/Dens|North Lake Miloch]], [[Stony Wilderness/Dens|Stony Wilderness]] ([[Max Raid Battle]]) <small>('''Galarian Form''')</small>"
     },
     {
+      "pokemonId": "farfetchd",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "{{rt|221|Sinnoh}} ([[Mass outbreak|Swarm]]) <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]]",
+          "[[Grassland Cave]]",
+          "[[Fountainspring Cave]]",
+          "[[Sunlit Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+        ]
+      },
+      "notes": "{{rt|221|Sinnoh}} ([[Mass outbreak|Swarm]]) <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]], [[Grassland Cave]], [[Fountainspring Cave]], [[Sunlit Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "farfetchd",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "{{rt|221|Sinnoh}} ([[Mass outbreak|Swarm]]) <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]]",
+          "[[Grassland Cave]]",
+          "[[Fountainspring Cave]]",
+          "[[Sunlit Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+        ]
+      },
+      "notes": "{{rt|221|Sinnoh}} ([[Mass outbreak|Swarm]]) <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]], [[Grassland Cave]], [[Fountainspring Cave]], [[Sunlit Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
       "pokemonId": "doduo",
       "gameId": "frlg-fr",
       "method": {
@@ -58935,6 +59408,34 @@
     },
     {
       "pokemonId": "grimer",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "{{rt|212|Sinnoh}} ([[Poké Radar]]) <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Swampy Cave]]",
+          "[[Dazzling Cave]]",
+          "[[Stargleam Cavern]]",
+          "[[Bogsunk Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "{{rt|212|Sinnoh}} ([[Poké Radar]]) <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Swampy Cave]], [[Dazzling Cave]], [[Stargleam Cavern]], [[Bogsunk Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "grimer",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "{{rt|212|Sinnoh}} ([[Poké Radar]]) <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Swampy Cave]]",
+          "[[Dazzling Cave]]",
+          "[[Stargleam Cavern]]",
+          "[[Bogsunk Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "{{rt|212|Sinnoh}} ([[Poké Radar]]) <small>('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Swampy Cave]], [[Dazzling Cave]], [[Stargleam Cavern]], [[Bogsunk Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "grimer",
       "gameId": "scarlet",
       "method": {
         "type": "wild",
@@ -58998,6 +59499,24 @@
         ]
       },
       "notes": "{{ka|Pokémon Mansion}}"
+    },
+    {
+      "pokemonId": "muk",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Grimer}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "muk",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Grimer}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
     },
     {
       "pokemonId": "muk",
@@ -60335,6 +60854,19 @@
     },
     {
       "pokemonId": "voltorb",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Coronet Highlands]]:''' [[Celestica Ruins]] (in boxes)",
+          "[[Sacred Plaza]] (also in boxes)",
+          "massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Kantonian Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Coronet Highlands]]:''' [[Celestica Ruins]] (in boxes), [[Sacred Plaza]] (also in boxes), massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Kantonian Form''')</small>"
+    },
+    {
+      "pokemonId": "voltorb",
       "gameId": "scarlet",
       "method": {
         "type": "wild",
@@ -60395,6 +60927,17 @@
     },
     {
       "pokemonId": "electrode",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Coronet Highlands]]:''' massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Kantonian Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Coronet Highlands]]:''' massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Kantonian Form''')</small>"
+    },
+    {
+      "pokemonId": "electrode",
       "gameId": "scarlet",
       "method": {
         "type": "wild",
@@ -60555,6 +61098,24 @@
     },
     {
       "pokemonId": "exeggutor",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Exeggcute}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "exeggutor",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Exeggcute}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "exeggutor",
       "gameId": "scarlet",
       "method": {
         "type": "wild",
@@ -60694,6 +61255,24 @@
         "type": "in-game-trade"
       },
       "notes": "[[Potbottom Desert]] ([[Wanderer]]) <small>('''Kantonian Form''')</small><br>[[Max Lair]] ([[Dynamax Adventure]]) <small>('''Kantonian Form''')</small><br>[[List of in-game event Pokémon in Pokémon Sword and Shield#Alolan Marowak|Reward]] for finding at least 50 {{rf|Alolan}} {{p|Diglett}} <small>('''Alolan Form''')</small><br>[[In-game trade#The Isle of Armor|Trade]] Marowak with Regina on [[Isle of Armor]] <small>('''Alolan Form''')</small><br>[[Max Lair]] ([[Dynamax Adventure]]) <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "marowak",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Cubone}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+    },
+    {
+      "pokemonId": "marowak",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Cubone}} <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
     },
     {
       "pokemonId": "hitmonlee",
@@ -61119,6 +61698,32 @@
         "type": "in-game-trade"
       },
       "notes": "[[In-game trade#The Isle of Armor|Trade]] {{rf|Galarian}} Weezing with Regina on [[Isle of Armor]] <small>('''Kantonian Form''')</small><br>[[Frostpoint Field/Dens|Frostpoint Field]], [[Giant's Bed/Dens|Giant's Bed]], [[Snowslide Slope/Dens|Snowslide Slope]], [[Frigid Sea/Dens|Frigid Sea]], [[Ballimere Lake/Dens|Ballimere Lake]] ([[Max Raid Battle]]) <small>('''Galarian Form''')</small><br>[[Max Lair]] ([[Dynamax Adventure]]) <small>('''Kantonian Form''')</small><br>[[Max Lair]] ([[Dynamax Adventure]]) <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "weezing",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "{{rt|227|Sinnoh}}",
+          "[[Stark Mountain]]<small> ('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Swampy Cave]]",
+          "[[Bogsunk Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+        ]
+      },
+      "notes": "{{rt|227|Sinnoh}}, [[Stark Mountain]]<small> ('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Swampy Cave]], [[Bogsunk Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "weezing",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "{{rt|227|Sinnoh}}",
+          "[[Stark Mountain]]<small> ('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Swampy Cave]]",
+          "[[Bogsunk Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+        ]
+      },
+      "notes": "{{rt|227|Sinnoh}}, [[Stark Mountain]]<small> ('''Kantonian Form''')</small><br>[[Grand Underground]] - [[Swampy Cave]], [[Bogsunk Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
     },
     {
       "pokemonId": "weezing",
@@ -64779,6 +65384,15 @@
     },
     {
       "pokemonId": "articuno",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "event",
+        "distributedAs": "[[Ramanas Park]] ({{DL|Ramanas Park|Kanto Room}}) <small>(requires [[Kanto Slate]])</small> ([[List of in-game event Pokémon in Pokémon Brilliant Diamond and Shining Pearl#Articuno|Only one]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+      },
+      "notes": "[[Ramanas Park]] ({{DL|Ramanas Park|Kanto Room}}) <small>(requires [[Kanto Slate]])</small> ([[List of in-game event Pokémon in Pokémon Brilliant Diamond and Shining Pearl#Articuno|Only one]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "articuno",
       "gameId": "scarlet",
       "method": {
         "type": "event",
@@ -64833,6 +65447,15 @@
     },
     {
       "pokemonId": "zapdos",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "event",
+        "distributedAs": "[[Ramanas Park]] ({{DL|Ramanas Park|Kanto Room}}) <small>(requires [[Kanto Slate]])</small> ([[List of in-game event Pokémon in Pokémon Brilliant Diamond and Shining Pearl#Zapdos|Only one]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+      },
+      "notes": "[[Ramanas Park]] ({{DL|Ramanas Park|Kanto Room}}) <small>(requires [[Kanto Slate]])</small> ([[List of in-game event Pokémon in Pokémon Brilliant Diamond and Shining Pearl#Zapdos|Only one]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "zapdos",
       "gameId": "scarlet",
       "method": {
         "type": "event",
@@ -64884,6 +65507,15 @@
         "distributedAs": "[[Max Lair]] ([[Dynamax Adventure]]) ([[List of in-game event Pokémon in Pokémon Sword and Shield#Moltres|Only one]]) <small>('''Kantonian Form''')</small><br>{{pkmn2|Roaming}} [[Isle of Armor]] ([[List of in-game event Pokémon in Pokémon Sword and Shield#Galarian Moltres|Only one]]) <small>('''Galarian Form''')</small>"
       },
       "notes": "[[Max Lair]] ([[Dynamax Adventure]]) ([[List of in-game event Pokémon in Pokémon Sword and Shield#Moltres|Only one]]) <small>('''Kantonian Form''')</small><br>{{pkmn2|Roaming}} [[Isle of Armor]] ([[List of in-game event Pokémon in Pokémon Sword and Shield#Galarian Moltres|Only one]]) <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "moltres",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "event",
+        "distributedAs": "[[Ramanas Park]] ({{DL|Ramanas Park|Kanto Room}}) <small>(requires [[Kanto Slate]])</small> ([[List of in-game event Pokémon in Pokémon Brilliant Diamond and Shining Pearl#Moltres|Only one]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+      },
+      "notes": "[[Ramanas Park]] ({{DL|Ramanas Park|Kanto Room}}) <small>(requires [[Kanto Slate]])</small> ([[List of in-game event Pokémon in Pokémon Brilliant Diamond and Shining Pearl#Moltres|Only one]]) <small>('''Kantonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
     },
     {
       "pokemonId": "moltres",
@@ -65499,6 +66131,18 @@
         "fromId": "unknown"
       },
       "notes": "[[Evolution|Evolve]] {{p|Quilava}}"
+    },
+    {
+      "pokemonId": "typhlosion",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Crimson Mirelands]]:''' [[Space-time distortion]]s (after completing [[Task (Legends: Arceus)|Mission]] 18)",
+          "massive [[mass outbreak]]s (after completing Request 102) <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Johtonian Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Crimson Mirelands]]:''' [[Space-time distortion]]s (after completing [[Task (Legends: Arceus)|Mission]] 18), massive [[mass outbreak]]s (after completing Request 102) <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Johtonian Form''')</small>"
     },
     {
       "pokemonId": "typhlosion",
@@ -69107,6 +69751,15 @@
     },
     {
       "pokemonId": "slowking",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Slowpoke}} <small>('''Johtonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "slowking",
       "gameId": "scarlet",
       "method": {
         "type": "wild",
@@ -69985,6 +70638,27 @@
         ]
       },
       "notes": "[[Iron Island]] ([[Super Rod]])<br>[[Grand Underground]] - [[Fountainspring Cave]], [[Riverbank Cave]], [[Still-Water Cavern]], [[Swampy Cave]], [[Bogsunk Cavern]] (After obtaining the [[National Pokédex]])"
+    },
+    {
+      "pokemonId": "qwilfish",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Obsidian Fieldlands]]:''' near [[Ramanas Island]] <small>('''Hisuian Form''')</small><br>'''[[Cobalt Coastlands]]:''' near [[Bathers' Lagoon]]",
+          "near [[Hideaway Bay]]",
+          "near [[Tombolo Walk]]",
+          "near [[Sand's Reach]]",
+          "[[Tranquility Cove]]",
+          "[[Islespy Shore]] and nearby (additional&nbsp",
+          "[[File:Alpha icon.png|link=Alpha Pokémon|14px]])",
+          "[[Lunker's Lair]]",
+          "near [[Seagrass Haven]]",
+          "near [[Firespit Island]]",
+          "massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Johtonian Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Obsidian Fieldlands]]:''' near [[Ramanas Island]] <small>('''Hisuian Form''')</small><br>'''[[Cobalt Coastlands]]:''' near [[Bathers' Lagoon]], near [[Hideaway Bay]], near [[Tombolo Walk]], near [[Sand's Reach]], [[Tranquility Cove]], [[Islespy Shore]] and nearby (additional&nbsp;[[File:Alpha icon.png|link=Alpha Pokémon|14px]]), [[Lunker's Lair]], near [[Seagrass Haven]], near [[Firespit Island]], massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Johtonian Form''')</small>"
     },
     {
       "pokemonId": "qwilfish",
@@ -71088,6 +71762,32 @@
         ]
       },
       "notes": "[[Trade]]<sup>Version 1.2.0+</sup> <small>('''Johtonian Form''')</small><br>[[Giant's Mirror]] <small>('''Galarian Form''')</small><br>[[Giant's Mirror/Dens|Giant's Mirror]], [[South Lake Miloch/Dens|South Lake Miloch]], [[Stony Wilderness/Dens|Stony Wilderness]], [[Watchtower Ruins/Dens|Watchtower Ruins]] ([[Max Raid Battle]]) <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "corsola",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "{{rt|230|Sinnoh}} ([[Mass outbreak|Swarm]]) <small>('''Johtonian Form''')</small><br>[[Grand Underground]] - [[Fountainspring Cave]]",
+          "[[Riverbank Cave]]",
+          "[[Still-Water Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Johtonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+        ]
+      },
+      "notes": "{{rt|230|Sinnoh}} ([[Mass outbreak|Swarm]]) <small>('''Johtonian Form''')</small><br>[[Grand Underground]] - [[Fountainspring Cave]], [[Riverbank Cave]], [[Still-Water Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Johtonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "corsola",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "{{rt|230|Sinnoh}} ([[Mass outbreak|Swarm]]) <small>('''Johtonian Form''')</small><br>[[Grand Underground]] - [[Fountainspring Cave]]",
+          "[[Riverbank Cave]]",
+          "[[Still-Water Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Johtonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+        ]
+      },
+      "notes": "{{rt|230|Sinnoh}} ([[Mass outbreak|Swarm]]) <small>('''Johtonian Form''')</small><br>[[Grand Underground]] - [[Fountainspring Cave]], [[Riverbank Cave]], [[Still-Water Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Johtonian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
     },
     {
       "pokemonId": "remoraid",
@@ -74149,6 +74849,32 @@
       "notes": "[[In-game trade#The Isle of Armor|Trade]] {{rf|Galarian}} Zigzagoon with Regina on [[Isle of Armor]] <small>('''Hoennian Form''')</small>"
     },
     {
+      "pokemonId": "zigzagoon",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "{{rt|202|Sinnoh}} ([[Mass outbreak|Swarm]]) <small>('''Hoennian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]]",
+          "[[Rocky Cave]]",
+          "[[Big Bluff Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Hoennian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+        ]
+      },
+      "notes": "{{rt|202|Sinnoh}} ([[Mass outbreak|Swarm]]) <small>('''Hoennian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]], [[Rocky Cave]], [[Big Bluff Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Hoennian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "zigzagoon",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "{{rt|202|Sinnoh}} ([[Mass outbreak|Swarm]]) <small>('''Hoennian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]]",
+          "[[Rocky Cave]]",
+          "[[Big Bluff Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Hoennian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+        ]
+      },
+      "notes": "{{rt|202|Sinnoh}} ([[Mass outbreak|Swarm]]) <small>('''Hoennian Form''')</small><br>[[Grand Underground]] - [[Spacious Cave]], [[Rocky Cave]], [[Big Bluff Cavern]] (After obtaining the [[National Pokédex]]) <small>('''Hoennian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
       "pokemonId": "linoone",
       "gameId": "sword",
       "method": {
@@ -74211,6 +74937,24 @@
         ]
       },
       "notes": "[[Giant's Bed]], [[Ballimere Lake]] <small>('''Galarian Form''')</small><br>[[Frostpoint Field/Dens|Frostpoint Field]], [[Giant's Bed/Dens|Giant's Bed]], [[Snowslide Slope/Dens|Snowslide Slope]], [[Giant's Foot/Dens|Giant's Foot]], [[Frigid Sea/Dens|Frigid Sea]] ([[Max Raid Battle]]) <small>('''Galarian Form''')</small><br>[[Max Lair]] ([[Dynamax Adventure]]) <small>('''Hoennian/Galarian Forms''')</small>"
+    },
+    {
+      "pokemonId": "linoone",
+      "gameId": "bdsp-d",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Zigzagoon}} <small>('''Hoennian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
+    },
+    {
+      "pokemonId": "linoone",
+      "gameId": "bdsp-p",
+      "method": {
+        "type": "evolution",
+        "fromId": "unknown"
+      },
+      "notes": "[[Evolution|Evolve]] {{p|Zigzagoon}} <small>('''Hoennian Form''')</small><br>Unobtainable <small>('''Galarian Form''')</small>"
     },
     {
       "pokemonId": "wurmple",
@@ -90553,6 +91297,18 @@
     },
     {
       "pokemonId": "samurott",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Alabaster Icelands]]:''' [[Space-time distortion]]s (after completing [[Task (Legends: Arceus)|Mission]] 18)",
+          "massive [[mass outbreak]]s (after completing Request 102) <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Unovan Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Alabaster Icelands]]:''' [[Space-time distortion]]s (after completing [[Task (Legends: Arceus)|Mission]] 18), massive [[mass outbreak]]s (after completing Request 102) <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Unovan Form''')</small>"
+    },
+    {
+      "pokemonId": "samurott",
       "gameId": "scarlet",
       "method": {
         "type": "evolution",
@@ -92425,6 +93181,17 @@
     },
     {
       "pokemonId": "lilligant",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Crimson Mirelands]]:''' massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Unovan Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Crimson Mirelands]]:''' massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Unovan Form''')</small>"
+    },
+    {
+      "pokemonId": "lilligant",
       "gameId": "scarlet",
       "method": {
         "type": "evolution",
@@ -92498,6 +93265,23 @@
         ]
       },
       "notes": "[[Trade]] <small>('''Red-Striped Form''')</small><br>[[Hulbury]], [[Motostoke Riverbank]], [[North Lake Miloch]] ([[fishing]]) <small>('''Blue-Striped Form''')</small><br>[[Motostoke Riverbank]] ({{m|Surf}}ing) <small>('''Blue-Striped Form''')</small><br>[[Bridge Field/Dens|Bridge Field]], [[Giant's Cap/Dens|Giant's Cap]], [[Giant's Mirror/Dens|Giant's Mirror]], [[Lake of Outrage/Dens|Lake of Outrage]], [[East Lake Axewell/Dens|East Lake Axewell]], [[West Lake Axewell/Dens|West Lake Axewell]], [[South Lake Miloch/Dens|South Lake Miloch]], [[North Lake Miloch/Dens|North Lake Miloch]] ([[Max Raid Battle]]) <small>('''Blue-Striped Form''')</small>"
+    },
+    {
+      "pokemonId": "basculin-red-striped",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Cobalt Coastlands]]:''' [[Tranquility Cove]]",
+          "near [[Islespy Shore]]",
+          "near [[Firespit Island]]",
+          "massive [[mass outbreak]]s <small>('''White-Striped Form''')</small><br>'''[[Coronet Highlands]]:''' [[Fabled Spring]] <small>('''White-Striped Form''')</small><br>'''[[Alabaster Icelands]]:''' near [[Avalugg's Legacy]]",
+          "[[Heart's Crag]]",
+          "[[Lake Acuity]]",
+          "near [[Pearl Settlement]] <small>('''White-Striped Form''')</small><br>Unobtainable <small>('''Red/Blue-Striped Forms''')</small>"
+        ]
+      },
+      "notes": "'''[[Cobalt Coastlands]]:''' [[Tranquility Cove]], near [[Islespy Shore]], near [[Firespit Island]], massive [[mass outbreak]]s <small>('''White-Striped Form''')</small><br>'''[[Coronet Highlands]]:''' [[Fabled Spring]] <small>('''White-Striped Form''')</small><br>'''[[Alabaster Icelands]]:''' near [[Avalugg's Legacy]], [[Heart's Crag]], [[Lake Acuity]], near [[Pearl Settlement]] <small>('''White-Striped Form''')</small><br>Unobtainable <small>('''Red/Blue-Striped Forms''')</small>"
     },
     {
       "pokemonId": "basculin-red-striped",
@@ -93365,6 +94149,20 @@
     },
     {
       "pokemonId": "zorua",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Alabaster Icelands]]:''' near [[Avalugg's Legacy]] ([[mass outbreak]]s)",
+          "near [[Glacier Terrace]]",
+          "[[Icepeak Cavern]]",
+          "massive mass outbreaks <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Unovan Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Alabaster Icelands]]:''' near [[Avalugg's Legacy]] ([[mass outbreak]]s), near [[Glacier Terrace]], [[Icepeak Cavern]], massive mass outbreaks <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Unovan Form''')</small>"
+    },
+    {
+      "pokemonId": "zorua",
       "gameId": "scarlet",
       "method": {
         "type": "breeding"
@@ -93402,6 +94200,15 @@
         ]
       },
       "notes": "[[Loop Lagoon]], [[Insular Sea]] ([[Wanderer]])"
+    },
+    {
+      "pokemonId": "zoroark",
+      "gameId": "pla",
+      "method": {
+        "type": "event",
+        "distributedAs": "'''[[Alabaster Icelands]]:''' near [[Avalugg's Legacy]] ([[mass outbreak]]s), near [[Glacier Terrace]], [[Icepeak Cavern]], [[Lake Acuity]]&nbsp;[[File:Alpha icon.png|link=Alpha Pokémon|14px]] (only [[List of in-game event Pokémon in Pokémon Legends: Arceus#Zoroark|one]] during [[Task (Legends: Arceus)|Mission]] 16), massive mass outbreaks <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Unovan Form''')</small>"
+      },
+      "notes": "'''[[Alabaster Icelands]]:''' near [[Avalugg's Legacy]] ([[mass outbreak]]s), near [[Glacier Terrace]], [[Icepeak Cavern]], [[Lake Acuity]]&nbsp;[[File:Alpha icon.png|link=Alpha Pokémon|14px]] (only [[List of in-game event Pokémon in Pokémon Legends: Arceus#Zoroark|one]] during [[Task (Legends: Arceus)|Mission]] 16), massive mass outbreaks <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Unovan Form''')</small>"
     },
     {
       "pokemonId": "zoroark",
@@ -96876,6 +97683,18 @@
     },
     {
       "pokemonId": "braviary",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Alabaster Icelands]]:''' near [[Lake Acuity]]<sup>Flying</sup> (also [[mass outbreak]]s)",
+          "massive mass outbreaks <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Unovan Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Alabaster Icelands]]:''' near [[Lake Acuity]]<sup>Flying</sup> (also [[mass outbreak]]s), massive mass outbreaks <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Unovan Form''')</small>"
+    },
+    {
+      "pokemonId": "braviary",
       "gameId": "scarlet",
       "method": {
         "type": "evolution",
@@ -98302,6 +99121,36 @@
       "notes": "South Province: [[South Province (Area One)|Area One]], [[South Province (Area Four)|Area Four]] <small>('''All Flowers''')</small><br>East Province: [[East Paldean Sea]] <small>('''All Flowers''')</small><br>West Province: [[West Province (Area One)|Area One]] <small>('''All Flowers''')</small><br>[[Tera Raid Battle]]s ({{DL|List of 1★ Tera Raid Battles (Paldea)|Flabébé|1★}}) <small>('''Red Flower''')</small>"
     },
     {
+      "pokemonId": "floette",
+      "gameId": "scarlet",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "South Province: [[South Province (Area One)|Area One]]",
+          "[[South Province (Area Four)|Area Four]]",
+          "[[South Province (Area Six)|Area Six]] <small>('''Colored Flowers''')</small><br>East Province: [[East Paldean Sea]] <small>('''Colored Flowers''')</small><br>East Province: [[East Province (Area One)|Area One]] ({{t|Grass}} {{Tera}} [[Type]]) <small>('''Red Flower''')</small><br>West Province: [[West Province (Area One)|Area One]] <small>('''Colored Flowers''')</small><br>North Province: [[North Province (Area One)|Area One]]",
+          "[[North Province (Area Two)|Area Two]]",
+          "[[North Province (Area Three)|Area Three]] <small>('''Colored Flowers''')</small><br>[[Area Zero]] <small>('''White Flower''')</small><br>Unobtainable <small>('''Eternal Flower''')</small>"
+        ]
+      },
+      "notes": "South Province: [[South Province (Area One)|Area One]], [[South Province (Area Four)|Area Four]], [[South Province (Area Six)|Area Six]] <small>('''Colored Flowers''')</small><br>East Province: [[East Paldean Sea]] <small>('''Colored Flowers''')</small><br>East Province: [[East Province (Area One)|Area One]] ({{t|Grass}} {{Tera}} [[Type]]) <small>('''Red Flower''')</small><br>West Province: [[West Province (Area One)|Area One]] <small>('''Colored Flowers''')</small><br>North Province: [[North Province (Area One)|Area One]], [[North Province (Area Two)|Area Two]], [[North Province (Area Three)|Area Three]] <small>('''Colored Flowers''')</small><br>[[Area Zero]] <small>('''White Flower''')</small><br>Unobtainable <small>('''Eternal Flower''')</small>"
+    },
+    {
+      "pokemonId": "floette",
+      "gameId": "violet",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "South Province: [[South Province (Area One)|Area One]]",
+          "[[South Province (Area Four)|Area Four]]",
+          "[[South Province (Area Six)|Area Six]] <small>('''Colored Flowers''')</small><br>East Province: [[East Paldean Sea]] <small>('''Colored Flowers''')</small><br>East Province: [[East Province (Area One)|Area One]] ({{t|Grass}} {{Tera}} [[Type]]) <small>('''Red Flower''')</small><br>West Province: [[West Province (Area One)|Area One]] <small>('''Colored Flowers''')</small><br>North Province: [[North Province (Area One)|Area One]]",
+          "[[North Province (Area Two)|Area Two]]",
+          "[[North Province (Area Three)|Area Three]] <small>('''Colored Flowers''')</small><br>[[Area Zero]] <small>('''White Flower''')</small><br>Unobtainable <small>('''Eternal Flower''')</small>"
+        ]
+      },
+      "notes": "South Province: [[South Province (Area One)|Area One]], [[South Province (Area Four)|Area Four]], [[South Province (Area Six)|Area Six]] <small>('''Colored Flowers''')</small><br>East Province: [[East Paldean Sea]] <small>('''Colored Flowers''')</small><br>East Province: [[East Province (Area One)|Area One]] ({{t|Grass}} {{Tera}} [[Type]]) <small>('''Red Flower''')</small><br>West Province: [[West Province (Area One)|Area One]] <small>('''Colored Flowers''')</small><br>North Province: [[North Province (Area One)|Area One]], [[North Province (Area Two)|Area Two]], [[North Province (Area Three)|Area Three]] <small>('''Colored Flowers''')</small><br>[[Area Zero]] <small>('''White Flower''')</small><br>Unobtainable <small>('''Eternal Flower''')</small>"
+    },
+    {
       "pokemonId": "florges",
       "gameId": "scarlet",
       "method": {
@@ -99651,6 +100500,20 @@
     },
     {
       "pokemonId": "sliggoo",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Crimson Mirelands]]:''' [[Holm of Trials]]&nbsp",
+          "[[File:Alpha icon.png|link=Alpha Pokémon|14px]]",
+          "[[Ursa's Ring]] ([[mass outbreak]]s)",
+          "massive mass outbreaks <small>('''Hisuian Form''')</small><br>'''[[Coronet Highlands]]:''' near [[Ancient Quarry]] <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Kalosian Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Crimson Mirelands]]:''' [[Holm of Trials]]&nbsp;[[File:Alpha icon.png|link=Alpha Pokémon|14px]], [[Ursa's Ring]] ([[mass outbreak]]s), massive mass outbreaks <small>('''Hisuian Form''')</small><br>'''[[Coronet Highlands]]:''' near [[Ancient Quarry]] <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Kalosian Form''')</small>"
+    },
+    {
+      "pokemonId": "sliggoo",
       "gameId": "scarlet",
       "method": {
         "type": "evolution",
@@ -99696,6 +100559,15 @@
         ]
       },
       "notes": "[[Axew's Eye/Dens|Axew's Eye]], [[Rolling Fields/Dens|Rolling Fields]] ([[Max Raid Battle]])"
+    },
+    {
+      "pokemonId": "goodra",
+      "gameId": "pla",
+      "method": {
+        "type": "event",
+        "distributedAs": "'''[[Obsidian Fieldlands]]:''' [[Lake Verity]]&nbsp;[[File:Alpha icon.png|link=Alpha Pokémon|14px]] (only [[List of in-game event Pokémon in Pokémon Legends: Arceus#Goodra|one]] during [[Task (Legends: Arceus)|Mission]] 14) <small>('''Hisuian Form''')</small><br>'''[[Crimson Mirelands]]:''' massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>'''[[Coronet Highlands]]:''' near [[Ancient Quarry]]&nbsp;[[File:Alpha icon.png|link=Alpha Pokémon|14px]] <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Kalosian Form''')</small>"
+      },
+      "notes": "'''[[Obsidian Fieldlands]]:''' [[Lake Verity]]&nbsp;[[File:Alpha icon.png|link=Alpha Pokémon|14px]] (only [[List of in-game event Pokémon in Pokémon Legends: Arceus#Goodra|one]] during [[Task (Legends: Arceus)|Mission]] 14) <small>('''Hisuian Form''')</small><br>'''[[Crimson Mirelands]]:''' massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>'''[[Coronet Highlands]]:''' near [[Ancient Quarry]]&nbsp;[[File:Alpha icon.png|link=Alpha Pokémon|14px]] <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Kalosian Form''')</small>"
     },
     {
       "pokemonId": "goodra",
@@ -100145,6 +101017,18 @@
     },
     {
       "pokemonId": "avalugg",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Alabaster Icelands]]:''' [[Avalugg's Legacy]]",
+          "massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Kalosian Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Alabaster Icelands]]:''' [[Avalugg's Legacy]], massive [[mass outbreak]]s <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Kalosian Form''')</small>"
+    },
+    {
+      "pokemonId": "avalugg",
       "gameId": "scarlet",
       "method": {
         "type": "evolution",
@@ -100517,6 +101401,18 @@
         "fromId": "unknown"
       },
       "notes": "[[Evolution|Evolve]] {{p|Dartrix}}"
+    },
+    {
+      "pokemonId": "decidueye",
+      "gameId": "pla",
+      "method": {
+        "type": "wild",
+        "locations": [
+          "'''[[Coronet Highlands]]:''' [[Space-time distortion]]s (after completing [[Task (Legends: Arceus)|Mission]] 18)",
+          "massive [[mass outbreak]]s (after completing Request 102) <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
+        ]
+      },
+      "notes": "'''[[Coronet Highlands]]:''' [[Space-time distortion]]s (after completing [[Task (Legends: Arceus)|Mission]] 18), massive [[mass outbreak]]s (after completing Request 102) <small>('''Hisuian Form''')</small><br>Unobtainable <small>('''Alolan Form''')</small>"
     },
     {
       "pokemonId": "decidueye",
