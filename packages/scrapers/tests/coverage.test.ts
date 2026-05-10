@@ -1,6 +1,6 @@
-import { describe, it, expect } from 'vitest';
+import type { Encounter, Pokemon } from '@livingdex/types';
+import { describe, expect, it } from 'vitest';
 import { generateCoverageReport } from '../src/output/coverage.ts';
-import type { Pokemon, Encounter } from '@livingdex/types';
 
 const samplePokemon: Pokemon[] = [
   {

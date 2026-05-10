@@ -1,6 +1,7 @@
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import { healthRouter } from './routes/health.ts';
+import { scrapeRouter } from './routes/scrape.ts';
 
 export function createApp(): Hono {
   const app = new Hono();
@@ -12,5 +13,6 @@ export function createApp(): Hono {
     }),
   );
   app.route('/api', healthRouter);
+  app.route('/api', scrapeRouter);
   return app;
 }

@@ -1,9 +1,9 @@
 import type { Dataset, Encounter, Pokemon } from '@livingdex/types';
 import { CURRENT_SCHEMA_VERSION } from '@livingdex/types';
-import { applyOverrides } from './overrides/apply.ts';
-import { generateCoverageReport, type CoverageReport } from './output/coverage.ts';
 import { GAMES } from './normalizers/games.ts';
 import { normalizePokemon } from './normalizers/pokemon.ts';
+import { type CoverageReport, generateCoverageReport } from './output/coverage.ts';
+import { applyOverrides } from './overrides/apply.ts';
 import type { BulbapediaClient } from './sources/bulbapedia/client.ts';
 import { fetchBulbapediaEncounters } from './sources/bulbapedia/encounters.ts';
 import type { PokeApiClient } from './sources/pokeapi/client.ts';
@@ -129,11 +129,7 @@ export async function runCombinedPipeline(
     });
 
     const pageTitle = `${capitalize(p.speciesSlug)}_(Pokémon)`;
-    const speciesEncounters = await fetchBulbapediaEncounters(
-      bulbapediaClient,
-      p.id,
-      pageTitle,
-    );
+    const speciesEncounters = await fetchBulbapediaEncounters(bulbapediaClient, p.id, pageTitle);
     allEncounters.push(...speciesEncounters);
   }
 

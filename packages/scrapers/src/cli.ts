@@ -6,9 +6,9 @@ import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
 import type { Dataset } from '@livingdex/types';
 import { SCRAPER_VERSION } from './index.ts';
+import type { CoverageReport } from './output/coverage.ts';
 import { writeDataset } from './output/writer.ts';
 import { runCombinedPipeline, runPokeApiPipeline } from './pipeline.ts';
-import type { CoverageReport } from './output/coverage.ts';
 import { BulbapediaClient } from './sources/bulbapedia/client.ts';
 import { PokeApiClient } from './sources/pokeapi/client.ts';
 import { downloadSprites } from './sources/pokeapi/sprites.ts';
@@ -99,7 +99,9 @@ if (values.source === 'pokeapi') {
     speciesIds,
     generations,
     onProgress: (event) => {
-      process.stdout.write(`\r[${event.stage}] ${event.current}/${event.total}: ${event.message}`.padEnd(80));
+      process.stdout.write(
+        `\r[${event.stage}] ${event.current}/${event.total}: ${event.message}`.padEnd(80),
+      );
     },
   });
 } else {
@@ -116,7 +118,9 @@ if (values.source === 'pokeapi') {
     generations,
     overridesDir,
     onProgress: (event) => {
-      process.stdout.write(`\r[${event.stage}] ${event.current}/${event.total}: ${event.message}`.padEnd(80));
+      process.stdout.write(
+        `\r[${event.stage}] ${event.current}/${event.total}: ${event.message}`.padEnd(80),
+      );
     },
   });
   dataset = result.dataset;
@@ -128,12 +132,10 @@ console.log(`\nFetched ${dataset.pokemon.length} Pokémon entries (with forms).`
 
 // Write coverage report if available
 if (coverage) {
-  writeFileSync(
-    join(outDir, 'coverage-report.json'),
-    JSON.stringify(coverage, null, 2),
-    'utf8',
+  writeFileSync(join(outDir, 'coverage-report.json'), JSON.stringify(coverage, null, 2), 'utf8');
+  console.log(
+    `Coverage report: ${coverage.pokemonWithAnyEncounter}/${coverage.totalPokemon} Pokémon have encounters.`,
   );
-  console.log(`Coverage report: ${coverage.pokemonWithAnyEncounter}/${coverage.totalPokemon} Pokémon have encounters.`);
 }
 
 if (values['no-sprites'] !== true) {
