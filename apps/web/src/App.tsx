@@ -14,8 +14,8 @@ export function App() {
           Dataset version: <code className="text-sm">{formatVersion(datasetMeta.version)}</code>
         </p>
         <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
-          <Stat label="Pokémon" value={datasetMeta.pokemonCount} />
-          <Stat label="Encounters" value={datasetMeta.encountersCount} />
+          <Stat label="Pokémon" value={datasetMeta.pokemonCount.toLocaleString('fr-FR')} />
+          <Stat label="Encounters" value={datasetMeta.encountersCount.toLocaleString('fr-FR')} />
           <Stat label="Generations" value={datasetMeta.generations.length} />
           <Stat label="Schema" value={`v${datasetMeta.schemaVersion}`} />
         </div>
