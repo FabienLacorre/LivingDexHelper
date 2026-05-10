@@ -44,7 +44,10 @@ describe('bulbapediaGameToGameIds', () => {
   it('maps DLC labels for SV', () => {
     expect(bulbapediaGameToGameIds('The Teal Mask')).toEqual(['scarlet', 'violet']);
     expect(bulbapediaGameToGameIds('The Indigo Disk')).toEqual(['scarlet', 'violet']);
-    expect(bulbapediaGameToGameIds('The Hidden Treasure of Area Zero')).toEqual(['scarlet', 'violet']);
+    expect(bulbapediaGameToGameIds('The Hidden Treasure of Area Zero')).toEqual([
+      'scarlet',
+      'violet',
+    ]);
   });
 });
 
