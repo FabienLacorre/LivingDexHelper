@@ -24,6 +24,9 @@ Thumbs.db
 # Claude Code session state
 .claude/
 
+# Superpowers brainstorm sessions (mockups, local server state)
+.superpowers/
+
 # Logs
 *.log
 npm-debug.log*
